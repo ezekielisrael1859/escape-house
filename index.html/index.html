@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Escape House — Luxury Hospitality & Wellness Hub by Hajiya Zainab Najjar" />
+  <title>Escape House</title>
+
+  <!-- Design System -->
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/hub.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════
+       NAVIGATION HEADER
+  ═══════════════════════════════ -->
+  <header class="hub-header">
+    <div class="hub-header__inner">
+      <div class="hub-header__logo">
+        <span class="label">Est. 2024</span>
+        <h1 class="hub-header__wordmark">Escape House</h1>
+      </div>
+      <button class="hub-header__menu" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════ -->
+  <section class="hub-hero full-bleed">
+    <div class="hub-hero__bg"></div>
+    <div class="overlay"></div>
+    <div class="hub-hero__content">
+      <p class="label hub-hero__eyebrow">Luxury · Wellness · Hospitality</p>
+      <h2 class="hub-hero__title">Where Every<br><em>Moment</em> is<br>Yours</h2>
+      <p class="hub-hero__sub">A world-class sanctuary curated by<br>Hajiya Zainab Najjar</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       INTRO
+  ═══════════════════════════════ -->
+  <section class="section hub-intro">
+    <div class="container">
+      <p class="label">Our World</p>
+      <div class="divider"></div>
+      <h2>Four Paths<br>to Escape</h2>
+      <p class="hub-intro__text">
+        From rejuvenating spa rituals to curated stays,
+        fine dining, and holistic wellness — every branch
+        of Escape House is crafted for your finest moments.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       BRANCHES GRID (2x2)
+  ═══════════════════════════════ -->
+  <section class="hub-branches">
+    <div class="category-grid">
+
+      <!-- Spa & Salon -->
+      <a href="/spa" class="category-card">
+        <div class="category-card__img-wrap">
+          <img
+            src="assets/images/hub/spa-thumb.jpg"
+            alt="Spa & Salon"
+            loading="lazy"
+            onerror="this.parentElement.style.background='var(--color-sand)'"
+          />
+        </div>
+        <div class="category-card-label">
+          <span class="label">01</span>
+          <p>Spa &amp; Salon</p>
+        </div>
+      </a>
+
+      <!-- Stay -->
+      <a href="/stay" class="category-card">
+        <div class="category-card__img-wrap">
+          <img
+            src="assets/images/hub/stay-thumb.jpg"
+            alt="Escape Stay"
+            loading="lazy"
+            onerror="this.parentElement.style.background='var(--color-stone-light)'"
+          />
+        </div>
+        <div class="category-card-label">
+          <span class="label">02</span>
+          <p>Escape Stay</p>
+        </div>
+      </a>
+
+      <!-- Dining -->
+      <a href="/dining" class="category-card">
+        <div class="category-card__img-wrap">
+          <img
+            src="assets/images/hub/dining-thumb.jpg"
+            alt="Fine Dining"
+            loading="lazy"
+            onerror="this.parentElement.style.background='var(--color-peach)'"
+          />
+        </div>
+        <div class="category-card-label">
+          <span class="label">03</span>
+          <p>Fine Dining</p>
+        </div>
+      </a>
+
+      <!-- Wellness -->
+      <a href="/wellness" class="category-card">
+        <div class="category-card__img-wrap">
+          <img
+            src="assets/images/hub/wellness-thumb.jpg"
+            alt="Wellness"
+            loading="lazy"
+            onerror="this.parentElement.style.background='var(--color-sage)'"
+          />
+        </div>
+        <div class="category-card-label">
+          <span class="label">04</span>
+          <p>Wellness</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       FOOTER
+  ═══════════════════════════════ -->
+  <footer class="hub-footer">
+    <div class="container">
+      <h3 class="hub-footer__wordmark">Escape House</h3>
+      <p class="subtitle">A sanctuary beyond compare</p>
+      <div class="divider" style="margin: var(--space-4) auto;"></div>
+      <p class="label">© 2024 Escape House. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

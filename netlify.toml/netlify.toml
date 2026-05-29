@@ -1,0 +1,45 @@
+# ============================================
+#  ESCAPE HOUSE — NETLIFY CONFIGURATION
+# ============================================
+
+[build]
+  publish = "."
+
+# --- SPA-style clean URLs ---
+[[redirects]]
+  from = "/spa"
+  to   = "/branches/spa/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/spa/*"
+  to   = "/branches/spa/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/stay"
+  to   = "/branches/stay/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/dining"
+  to   = "/branches/dining/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/wellness"
+  to   = "/branches/wellness/index.html"
+  status = 200
+
+# --- Security & Performance Headers ---
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

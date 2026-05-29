@@ -1,0 +1,219 @@
+/* ============================================
+   ESCAPE HOUSE — COMPONENTS
+   Buttons, Cards, Forms, Glassmorphism
+   ============================================ */
+
+/* --- BUTTONS --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-8);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Primary — Peach */
+.btn-primary {
+  background: var(--color-peach);
+  color: var(--color-stone-dark);
+  box-shadow: var(--shadow-soft);
+}
+.btn-primary:active {
+  box-shadow: var(--shadow-inset);
+  transform: scale(0.98);
+  background: var(--color-peach-deep);
+}
+
+/* Secondary — Sage */
+.btn-secondary {
+  background: var(--color-sage);
+  color: var(--color-white);
+  box-shadow: var(--shadow-soft);
+}
+.btn-secondary:active {
+  box-shadow: var(--shadow-inset);
+  transform: scale(0.98);
+}
+
+/* Ghost — Outlined */
+.btn-ghost {
+  background: transparent;
+  color: var(--color-stone);
+  border: 1.5px solid var(--color-stone-light);
+}
+.btn-ghost:active {
+  box-shadow: var(--shadow-inset);
+  background: var(--color-sand);
+  transform: scale(0.98);
+}
+
+/* Full width */
+.btn-full {
+  width: 100%;
+}
+
+/* --- CARDS --- */
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: box-shadow var(--transition-base);
+}
+
+.card:active {
+  box-shadow: var(--shadow-lifted);
+}
+
+.card-body {
+  padding: var(--space-5);
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* Horizontal scroll card */
+.card-snap {
+  min-width: 72vw;
+  max-width: 300px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.scroll-snap-row {
+  display: flex;
+  gap: var(--space-4);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: var(--space-4) var(--space-5);
+  scrollbar-width: none;
+}
+.scroll-snap-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* --- CATEGORY GRID (2x2) --- */
+.category-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+}
+
+.category-card {
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--shadow-card);
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.category-card:active img {
+  transform: scale(1.04);
+}
+
+.category-card-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-4) var(--space-3);
+  background: linear-gradient(
+    to top,
+    rgba(107, 93, 79, 0.75),
+    transparent
+  );
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  letter-spacing: var(--tracking-wide);
+}
+
+/* --- GLASSMORPHISM FORMS --- */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: var(--space-4);
+}
+
+.form-icon {
+  position: absolute;
+  left: var(--space-4);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--color-stone-light);
+  pointer-events: none;
+}
+
+.form-input {
+  width: 100%;
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-10);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  color: var(--color-stone-dark);
+  font-size: var(--text-base);
+  transition: border-color var(--transition-fast);
+}
+
+.form-input::placeholder {
+  color: var(--color-stone-light);
+  font-style: italic;
+}
+
+.form-input:focus {
+  border-color: var(--color-peach-deep);
+  background: rgba(244, 229, 217, 0.75);
+}
+
+/* --- SECTION HEADER --- */
+.section-header {
+  padding: var(--space-6) var(--space-5) var(--space-2);
+}
+
+.section-header .label {
+  margin-bottom: var(--space-2);
+}
+
+.section-header h2 {
+  margin-bottom: var(--space-2);
+}
+
+/* --- DIVIDER --- */
+.divider {
+  width: var(--space-12);
+  height: 1px;
+  background: var(--color-peach-deep);
+  margin: var(--space-4) 0;
+}
