@@ -1,11 +1,22 @@
 /* ============================================
-   ESCAPE HOUSE — MAIN JS
-   Shared utilities & interactions
+   ESCAPE HOUSE — MAIN JS V2
    ============================================ */
+
+// --- HEADER SCROLL EFFECT ---
+const header = document.querySelector('.hub-header');
+
+if (header) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  }, { passive: true });
+}
 
 // --- HAMBURGER MENU TOGGLE ---
 const menuBtn = document.querySelector('.hub-header__menu');
-const body = document.body;
 
 if (menuBtn) {
   menuBtn.addEventListener('click', () => {
@@ -13,24 +24,9 @@ if (menuBtn) {
   });
 }
 
-// --- HEADER SCROLL EFFECT ---
-const header = document.querySelector('.hub-header');
-
-if (header) {
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-      header.style.background = 'rgba(244, 229, 217, 0.95)';
-      header.style.boxShadow = 'var(--shadow-soft)';
-    } else {
-      header.style.background = 'var(--glass-bg)';
-      header.style.boxShadow = 'none';
-    }
-  }, { passive: true });
-}
-
-// --- SMOOTH REVEAL ON SCROLL ---
+// --- SCROLL REVEAL ---
 const revealEls = document.querySelectorAll(
-  '.category-card, .hub-intro, .section-header'
+  '.category-card, .hub-intro, .hub-quote, .section-header'
 );
 
 if ('IntersectionObserver' in window) {
@@ -41,7 +37,7 @@ if ('IntersectionObserver' in window) {
         observer.unobserve(el.target);
       }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.1 });
 
   revealEls.forEach(el => {
     el.classList.add('will-reveal');
