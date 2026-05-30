@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Escape House — Luxury Hospitality & Wellness Hub by Hajiya Zainab Najjar" />
-  <title>Escape House</title>
+  <meta name="description" content="Escape House Abuja — Luxury Hospitality & Wellness by Hajiya Zainab Najjar" />
+  <title>Escape House Abuja</title>
   <link rel="stylesheet" href="assets/css/tokens.css" />
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
@@ -28,136 +28,107 @@
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- 1. HERO -->
   <section class="hub-hero full-bleed">
     <div class="hub-hero__bg"></div>
+    <div class="hub-hero__overlay"></div>
     <div class="hub-hero__content">
-      <p class="label hub-hero__eyebrow">Maitama, Abuja · Premium Wellness</p>
+      <p class="hub-hero__location">Maitama, Abuja · Nigeria</p>
       <h2 class="hub-hero__title">Escape<br>House</h2>
       <p class="hub-hero__subtitle">Luxury · Wellness · Hospitality</p>
       <div class="hub-hero__divider"></div>
       <p class="hub-hero__sub">A world-class sanctuary curated by<br>Hajiya Zainab Najjar</p>
-      <div class="hub-hero__buttons">
-        <a href="/spa" class="btn-gold">Explore Our World</a>
-        <a href="#branches" class="btn-outline-gold">Our Branches</a>
-      </div>
+      <a href="#experiences" class="btn-gold">Explore Our World</a>
     </div>
   </section>
 
-  <!-- INTRO -->
-  <section class="section hub-intro">
+  <!-- 2. BRAND STATEMENT -->
+  <section class="hub-statement">
     <div class="container">
-      <p class="label">Our World</p>
-      <div class="hub-intro__divider"></div>
-      <h2>Four Paths<br>To Escape</h2>
-      <div class="hub-intro__divider"></div>
-      <p class="hub-intro__text">
-        From rejuvenating spa rituals to curated stays,
-        fine dining, and holistic wellness — every branch
-        of Escape House is crafted for your finest moments.
+      <p class="hub-statement__text">
+        More than a destination — Escape House is Abuja's most complete luxury experience. Where world-class wellness, premium lodging, fine dining, and expert grooming exist under one roof.
       </p>
     </div>
   </section>
 
-  <!-- BRANCHES GRID -->
-  <section class="hub-branches" id="branches">
-    <div class="category-grid">
+  <!-- 3. FOUR EXPERIENCES -->
+  <section class="hub-experiences" id="experiences">
+    <div class="hub-experiences__header container">
+      <span class="label">Our Services</span>
+      <h2>Four Paths<br>To Escape</h2>
+    </div>
+    <div class="experiences-grid">
 
-      <a href="/spa" class="category-card">
-        <div class="category-card__img-wrap">
-          <img
-            src="assets/images/hub/spa-thumb.jpg"
-            alt="Spa & Salon"
-            loading="lazy"
-            onerror="this.parentElement.style.background='linear-gradient(135deg, #2A3320, #3D4A2E)'"
-          />
-        </div>
-        <div class="category-card-label">
-          <span class="label">01</span>
-          Spa & Salon
+      <a href="/spa" class="exp-card">
+        <div class="exp-card__img" style="background-image: url('assets/images/hub/spa-thumb.jpg'); background-color: #2A3320;"></div>
+        <div class="exp-card__overlay"></div>
+        <div class="exp-card__content">
+          <span class="exp-card__num">01</span>
+          <h3 class="exp-card__title">Escape House Spa</h3>
+          <p class="exp-card__desc">Premium wellness rituals & treatments</p>
         </div>
       </a>
 
-      <a href="/stay" class="category-card">
-        <div class="category-card__img-wrap">
-          <img
-            src="assets/images/hub/stay-thumb.jpg"
-            alt="Escape Stay"
-            loading="lazy"
-            onerror="this.parentElement.style.background='linear-gradient(135deg, #1a1a2e, #2d2d44)'"
-          />
-        </div>
-        <div class="category-card-label">
-          <span class="label">02</span>
-          Escape Stay
+      <a href="/stay" class="exp-card">
+        <div class="exp-card__img" style="background-image: url('assets/images/hub/stay-thumb.jpg'); background-color: #1a1a2e;"></div>
+        <div class="exp-card__overlay"></div>
+        <div class="exp-card__content">
+          <span class="exp-card__num">02</span>
+          <h3 class="exp-card__title">Hotel Apartments</h3>
+          <p class="exp-card__desc">Luxury boutique staycations & lodging</p>
         </div>
       </a>
 
-      <a href="/dining" class="category-card">
-        <div class="category-card__img-wrap">
-          <img
-            src="assets/images/hub/dining-thumb.jpg"
-            alt="Fine Dining"
-            loading="lazy"
-            onerror="this.parentElement.style.background='linear-gradient(135deg, #2e1a1a, #442d2d)'"
-          />
-        </div>
-        <div class="category-card-label">
-          <span class="label">03</span>
-          Fine Dining
+      <a href="/dining" class="exp-card">
+        <div class="exp-card__img" style="background-image: url('assets/images/hub/dining-thumb.jpg'); background-color: #2e1a1a;"></div>
+        <div class="exp-card__overlay"></div>
+        <div class="exp-card__content">
+          <span class="exp-card__num">03</span>
+          <h3 class="exp-card__title">Escape Restaurant</h3>
+          <p class="exp-card__desc">24/7 Japanese, Italian & premium grills</p>
         </div>
       </a>
 
-      <a href="/wellness" class="category-card">
-        <div class="category-card__img-wrap">
-          <img
-            src="assets/images/hub/wellness-thumb.jpg"
-            alt="Wellness"
-            loading="lazy"
-            onerror="this.parentElement.style.background='linear-gradient(135deg, #1a2e1a, #2d442d)'"
-          />
-        </div>
-        <div class="category-card-label">
-          <span class="label">04</span>
-          Wellness
+      <a href="/salon" class="exp-card">
+        <div class="exp-card__img" style="background-image: url('assets/images/hub/wellness-thumb.jpg'); background-color: #1a2e1a;"></div>
+        <div class="exp-card__overlay"></div>
+        <div class="exp-card__content">
+          <span class="exp-card__num">04</span>
+          <h3 class="exp-card__title">Escape Salon</h3>
+          <p class="exp-card__desc">Unisex grooming for ladies, men & children</p>
         </div>
       </a>
 
     </div>
   </section>
 
-  <!-- QUOTE SECTION -->
-  <section class="hub-quote">
-    <p class="hub-quote__text">
-      "You deserve to feel this good —<br>not someday, but today."
-    </p>
-    <p class="hub-quote__author">— Escape House, Abuja</p>
+  <!-- 4. CODED ESCAPE HOUSE -->
+  <section class="coded-section">
+    <div class="coded-bg"></div>
+    <div class="coded-overlay"></div>
+    <div class="coded-content">
+      <div class="coded-badge">Ultra Exclusive</div>
+      <p class="coded-location">Paraguay Close · Maitama, Abuja</p>
+      <div class="coded-divider"></div>
+      <h2 class="coded-title">Coded<br>Escape House</h2>
+      <div class="coded-divider"></div>
+      <p class="coded-sub">
+        A private sanctuary reserved for the most discerning.
+        Where every detail is intentional and every moment
+        is unforgettable.
+      </p>
+      <a href="/coded" class="btn-coded">Experience Coded</a>
+    </div>
   </section>
-<!-- CODED ESCAPE HOUSE -->
-<section class="coded-section">
-  <div class="coded-bg"></div>
-  <div class="coded-overlay"></div>
-  <div class="coded-content">
-    <div class="coded-badge">Ultra Exclusive</div>
-    <p class="coded-location">Paraguay Close · Maitama, Abuja</p>
-    <div class="coded-divider"></div>
-    <h2 class="coded-title">Coded<br>Escape House</h2>
-    <div class="coded-divider"></div>
-    <p class="coded-sub">
-      A private sanctuary reserved for the most discerning.
-      Where every detail is intentional and every moment
-      is unforgettable.
-    </p>
-    <a href="/coded" class="btn-coded">Experience Coded</a>
-  </div>
-</section>
-  <!-- FOOTER -->
+
+  <!-- 5. FOOTER -->
   <footer class="hub-footer">
     <div class="container">
       <h3 class="hub-footer__wordmark">Escape House</h3>
       <div class="hub-footer__divider"></div>
       <p class="subtitle">A sanctuary beyond compare</p>
-      <span class="label">© 2024 Escape House. All rights reserved.</span>
+      <a href="https://instagram.com/escapehouse_" class="hub-footer__instagram">@escapehouse_</a>
+      <span class="label">© 2024 Escape House Abuja. All rights reserved.</span>
     </div>
   </footer>
 
