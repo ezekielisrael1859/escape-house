@@ -72,10 +72,10 @@
   overflow: hidden;
 }
 
-..hub-hero__bg {
+.hub-hero__bg {
   position: absolute;
   inset: 0;
-  background-image: url('../../assets/images/hub/hero-bg.jpg');
+  background-image: url('../images/hub/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -90,18 +90,6 @@
     rgba(26, 31, 20, 0.85) 0%,
     rgba(42, 51, 32, 0.80) 50%,
     rgba(28, 28, 28, 0.90) 100%
-  );
-}
-
-/* Gold shimmer overlay */
-.hub-hero__bg::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    ellipse at 50% 60%,
-    rgba(201, 168, 76, 0.12) 0%,
-    transparent 70%
   );
 }
 
@@ -142,7 +130,6 @@
   margin-bottom: var(--space-6);
 }
 
-/* Gold divider line */
 .hub-hero__divider {
   width: 60px;
   height: 1px;
@@ -158,7 +145,6 @@
   margin: 0 auto var(--space-8);
 }
 
-/* Hero buttons */
 .hub-hero__buttons {
   display: flex;
   flex-direction: column;

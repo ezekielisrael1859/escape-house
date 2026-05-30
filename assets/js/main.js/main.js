@@ -24,7 +24,7 @@ if (menuBtn) {
   });
 }
 
-// --- SCROLL REVEAL ---
+// --- SMOOTH REVEAL ON SCROLL ---
 const revealEls = document.querySelectorAll(
   '.category-card, .hub-intro, .hub-quote, .section-header'
 );
