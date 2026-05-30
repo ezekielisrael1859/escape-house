@@ -72,16 +72,25 @@
   overflow: hidden;
 }
 
-.hub-hero__bg {
+..hub-hero__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('../../assets/images/hub/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.hub-hero__bg::before {
+  content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(
     160deg,
-    #1a1f14 0%,
-    #2A3320 40%,
-    #1C1C1C 100%
+    rgba(26, 31, 20, 0.85) 0%,
+    rgba(42, 51, 32, 0.80) 50%,
+    rgba(28, 28, 28, 0.90) 100%
   );
-  z-index: 0;
 }
 
 /* Gold shimmer overlay */
