@@ -69,6 +69,7 @@
   font-size: 0.65rem !important;
   white-space: nowrap;
   flex-shrink: 0;
+  margin-right: var(--space-2);
 }
 
 /* --- HERO --- */
@@ -544,7 +545,8 @@
 .coded__title {
   font-family: var(--font-heading);
   font-size: var(--text-5xl);
-  line-height: var(--leading-tight);
+  line-height: 1.1;
+  margin-bottom: var(--space-4);
 }
 
 .coded__title span {
