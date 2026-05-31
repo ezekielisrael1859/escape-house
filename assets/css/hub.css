@@ -82,7 +82,7 @@
   z-index: 0;
 }
 
-.hero__overlay {
+.hero__overlay{
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -471,10 +471,10 @@
   overflow: hidden;
 }
 
-.coded__bg {
+..coded__bg {
   position: absolute;
   inset: 0;
-  background-image: url('../images/hub/coded-bg.jpg');
+  background-image: url('assets/images/hub/coded-bg.jpg');
   background-size: cover;
   background-position: center;
   z-index: 0;
