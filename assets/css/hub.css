@@ -30,10 +30,19 @@
   gap: var(--space-3);
 }
 
-.nav__links {
+..nav__links {
   display: flex;
   gap: var(--space-4);
   flex-shrink: 0;
+}
+
+.nav__links a {
+  color: #FFFFFF !important;
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  opacity: 0.8;
 }
 
 .nav__logo {
