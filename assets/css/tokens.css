@@ -1,101 +1,106 @@
 /* ============================================
-   ESCAPE HOUSE — DESIGN TOKENS V2
-   Dramatic Luxury Palette
+   ESCAPE HOUSE — DESIGN TOKENS V3
+   Pinterest Brief Implementation
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
 
-  /* --- HUB COLORS --- */
-  --color-pearl:        #F5F0E8;
-  --color-cream:        #FAF7F2;
-  --color-sand:         #EDE5D8;
-  --color-gold:         #C9A84C;
+  /* --- COLOR SYSTEM --- */
+  --color-page:         #0D0F0B;
+  --color-surface:      #1A1F17;
+  --color-surface-2:    #242920;
+  --color-gold:         #C49A3C;
+  --color-gold-muted:   #8B7340;
   --color-gold-light:   #E2C97E;
   --color-gold-dark:    #A8872E;
-  --color-charcoal:     #1C1C1C;
-  --color-dark:         #0F0F0F;
-  --color-stone:        #6B5D4F;
-  --color-stone-light:  #C4B5A5;
   --color-white:        #FFFFFF;
+  --color-cream:        #D4C5A0;
+  --color-charcoal:     #111111;
+  --color-dark:         #0D0D0D;
 
-  /* --- SPA BRANCH COLORS --- */
+  /* --- SPA BRANCH --- */
   --spa-dark:           #2A3320;
   --spa-green:          #3D4A2E;
-  --spa-green-light:    #4E5E3A;
-  --spa-gold:           #C9A84C;
-  --spa-gold-light:     #E2C97E;
-  --spa-cream:          #F5F0E8;
 
   /* --- OVERLAYS --- */
-  --color-overlay-dark:  rgba(15, 15, 15, 0.55);
-  --color-overlay-gold:  rgba(201, 168, 76, 0.15);
+  --overlay-dark:       rgba(13, 15, 11, 0.88);
+  --overlay-gold:       rgba(196, 154, 60, 0.15);
+  --divider-gold:       rgba(196, 154, 60, 0.30);
 
   /* --- TYPOGRAPHY --- */
-  --font-heading:  'Cormorant Garamond', Georgia, serif;
-  --font-display:  'Cinzel', Georgia, serif;
-  --font-body:     'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-display:   'Cinzel', Georgia, serif;
+  --font-heading:   'Cormorant Garamond', Georgia, serif;
+  --font-script:    'Playfair Display', Georgia, serif;
+  --font-body:      'Inter', system-ui, sans-serif;
 
-  --text-xs:   0.75rem;
-  --text-sm:   0.875rem;
-  --text-base: 1rem;
-  --text-lg:   1.125rem;
-  --text-xl:   1.375rem;
-  --text-2xl:  1.75rem;
-  --text-3xl:  2.25rem;
-  --text-4xl:  3rem;
-  --text-5xl:  4rem;
-  --text-6xl:  5.5rem;
+  /* --- TYPE SCALE --- */
+  --text-xs:    0.75rem;
+  --text-sm:    0.875rem;
+  --text-base:  1rem;
+  --text-lg:    1.125rem;
+  --text-xl:    1.375rem;
+  --text-2xl:   1.75rem;
+  --text-3xl:   2.25rem;
+  --text-4xl:   3rem;
+  --text-5xl:   4rem;
+  --text-6xl:   5.5rem;
 
-  --tracking-tight:   -0.02em;
-  --tracking-wide:     0.08em;
-  --tracking-wider:    0.15em;
-  --tracking-widest:   0.25em;
+  /* --- LETTER SPACING --- */
+  --tracking-tight:    -0.02em;
+  --tracking-normal:    0em;
+  --tracking-wide:      0.08em;
+  --tracking-wider:     0.15em;
+  --tracking-widest:    0.25em;
+  --tracking-ultra:     0.35em;
 
-  --leading-tight:  1.1;
-  --leading-normal: 1.6;
-  --leading-loose:  1.8;
+  /* --- LINE HEIGHT --- */
+  --leading-tight:   1.1;
+  --leading-snug:    1.3;
+  --leading-normal:  1.6;
+  --leading-loose:   1.8;
 
   /* --- SPACING --- */
-  --space-1:  0.25rem;
-  --space-2:  0.5rem;
-  --space-3:  0.75rem;
-  --space-4:  1rem;
-  --space-5:  1.25rem;
-  --space-6:  1.5rem;
-  --space-8:  2rem;
-  --space-10: 2.5rem;
-  --space-12: 3rem;
-  --space-16: 4rem;
-  --space-20: 5rem;
+  --space-1:   0.25rem;
+  --space-2:   0.5rem;
+  --space-3:   0.75rem;
+  --space-4:   1rem;
+  --space-5:   1.25rem;
+  --space-6:   1.5rem;
+  --space-8:   2rem;
+  --space-10:  2.5rem;
+  --space-12:  3rem;
+  --space-16:  4rem;
+  --space-20:  5rem;
+  --space-24:  6rem;
+  --space-32:  8rem;
 
-  /* --- BORDER RADIUS --- */
-  --radius-sm:   0.5rem;
-  --radius-md:   1rem;
-  --radius-lg:   1.5rem;
-  --radius-pill: 999px;
+  /* --- BORDERS --- */
+  --border-gold:        1px solid rgba(196, 154, 60, 0.40);
+  --border-gold-strong: 1px solid rgba(196, 154, 60, 0.70);
+  --border-silver:      1px solid rgba(192, 192, 192, 0.35);
+  --border-white:       1px solid rgba(255, 255, 255, 0.15);
+
+  /* --- RADIUS --- */
+  --radius-sm:    0.5rem;
+  --radius-md:    1rem;
+  --radius-pill:  999px;
 
   /* --- SHADOWS --- */
-  --shadow-soft:   0 2px 16px rgba(0,0,0,0.08);
-  --shadow-card:   0 4px 32px rgba(0,0,0,0.12);
-  --shadow-gold:   0 4px 24px rgba(201,168,76,0.25);
-  --shadow-inset:  inset 0 2px 8px rgba(0,0,0,0.2);
-
-  /* --- GLASSMORPHISM --- */
-  --glass-bg:     rgba(245, 240, 232, 0.55);
-  --glass-border: rgba(255, 255, 255, 0.35);
-  --glass-blur:   blur(16px);
+  --shadow-gold:   0 4px 32px rgba(196, 154, 60, 0.20);
+  --shadow-card:   0 8px 48px rgba(0, 0, 0, 0.40);
+  --shadow-inset:  inset 0 2px 8px rgba(0, 0, 0, 0.30);
 
   /* --- TRANSITIONS --- */
-  --transition-fast:   150ms ease;
-  --transition-base:   280ms ease;
-  --transition-smooth: 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-fast:    150ms ease;
+  --transition-base:    280ms ease;
+  --transition-smooth:  500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
   /* --- Z-INDEX --- */
-  --z-base:    1;
-  --z-card:    10;
-  --z-nav:     100;
-  --z-overlay: 200;
-  --z-modal:   300;
+  --z-base:     1;
+  --z-card:     10;
+  --z-nav:      100;
+  --z-overlay:  200;
+  --z-modal:    300;
 }
