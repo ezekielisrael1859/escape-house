@@ -65,12 +65,14 @@
   color: var(--color-dark) !important;
   font-weight: 600 !important;
   opacity: 1 !important;
-  padding: var(--space-2) var(--space-3);
+  padding: var(--space-2) 0.5rem !important;
   font-size: 0.65rem !important;
-  white-space: nowrap;
-  flex-shrink: 0;
-  margin-right: var(--space-2);
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box !important;
 }
+
 
 /* --- HERO --- */
 .hero {
