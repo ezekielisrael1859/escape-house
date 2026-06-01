@@ -61,17 +61,18 @@
 }
 
 .nav__book {
-  background: var(--color-gold) !important;
-  color: var(--color-dark) !important;
-  font-weight: 600 !important;
-  opacity: 1 !important;
-  padding: var(--space-1) calc(var(--space-1) * 1.5) !important;
-  font-size: 0.65rem !important;
-  white-space: nowrap !important;
-  flex-shrink: 0 !important;
-  margin-right: 1rem !important;
-  box-sizing: border-box !important;
+  background: var(--color-gold);
+  color: var(--color-dark);
+  font-weight: 600;
+  opacity: 1;
+  padding: var(--space-1) calc(var(--space-1) * 1.5);
+  font-size: 0.65rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-right: var(--space-2);
+  box-sizing: border-box;
 }
+
 
 
 
