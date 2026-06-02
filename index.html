@@ -8,7 +8,17 @@
   <link rel="stylesheet" href="assets/css/tokens.css" />
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
-  <link rel="stylesheet" href="assets/css/hub.css" />
+  <link rel="stylesheet" href="assets/css/hub.css?v=1" />
+ <style>
+  .hero__infobar {
+    background: rgba(10, 12, 8, 0.95) !important;
+  }
+  .hero__infobar * {
+    color: #ffffff !important;
+  }
+</style>
+
+
 </head>
 
 <body>
@@ -45,21 +55,30 @@
     </div>
   </div>
   <div class="hero__infobar">
-  <div class="hero__info-item">
-    <span class="hero__info-label">Location</span>
-    <span class="hero__info-value">Maitama, Abuja</span>
+  <p class="hero__infobar-title">Our Locations</p>
+  <div class="hero__infobar-divider"></div>
+  <div class="hero__info-block">
+    <p class="hero__info-name">Escape House — Maitama</p>
+    <p class="hero__info-address">No. 34 Usuma Street, off Gana Street<br>Maitama, Abuja 904101, FCT, Nigeria</p>
+    <a href="https://maps.google.com" class="hero__info-directions">Get Directions ↗</a>
   </div>
-  <div class="hero__info-item">
-    <span class="hero__info-label">Open</span>
-    <span class="hero__info-value">24 Hours / Daily</span>
+  <div class="hero__infobar-divider"></div>
+  <div class="hero__info-block">
+    <p class="hero__info-name">Coded Escape House</p>
+    <p class="hero__info-address">No. 3 Paraguay Close, off Winnipeg Close<br>Maitama, Abuja 900271, FCT, Nigeria</p>
+    <a href="https://maps.google.com" class="hero__info-directions">Get Directions ↗</a>
   </div>
-  <div class="hero__info-item">
-    <span class="hero__info-label">Instagram</span>
-    <span class="hero__info-value">@escapehouse_</span>
+  <div class="hero__infobar-divider"></div>
+  <div class="hero__info-block">
+    <p class="hero__info-label">Always Open</p>
+    <p class="hero__info-value">24 Hours·Every Day</p>
+  </div>
+  <div class="hero__infobar-divider"></div>
+  <div class="hero__info-block">
+    <p class="hero__info-label">Follow Our World</p>
+    <a href="https://instagram.com/escapehouse_" class="hero__info-value">@escapehouse_</a>
   </div>
 </div>
-
-</section>
 
   <!-- 2. SERVICES STRIP -->
 <section class="services-strip">
