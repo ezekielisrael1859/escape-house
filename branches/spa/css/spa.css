@@ -77,7 +77,7 @@
 .spa-hero__bg {
   position: absolute;
   inset: 0;
-  background-image: url('../../assets/images/spa/spa-hero.jpg');
+  background-image: url('../../../assets/images/spa/spa-hero.jpg');
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -508,7 +508,7 @@
 .spa-intro__img {
   width: 100%;
   aspect-ratio: 16 / 9;
-  background-image: url('../../assets/images/spa/spa-intro.jpg');
+  background-image: url('../../../assets/images/spa/spa-intro.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -533,7 +533,7 @@
 
 /* --- FEATURES BACKGROUND --- */
 .spa-features {
-  background-image: url('../../assets/images/spa/spa-features.jpg');
+  background-image: url('../../../assets/images/spa/spa-features.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
