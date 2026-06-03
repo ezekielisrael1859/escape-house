@@ -1,6 +1,18 @@
 /* ============================================
-   ESCAPE HOUSE — SPA BRANCH CSS
+   ESCAPE HOUSE SPA — BRANCH CSS
+   Palette: Forest Green + Soft Gold
    ============================================ */
+
+:root {
+  --spa-bg:        #0A0F0A;
+  --spa-surface:   #111A11;
+  --spa-green:     #1C2B1C;
+  --spa-green-2:   #243024;
+  --spa-gold:      #C49A3C;
+  --spa-gold-soft: #E2C97E;
+  --spa-cream:     #E8E0D0;
+  --spa-silver:    rgba(255,255,255,0.65);
+}
 
 /* --- NAVIGATION --- */
 .spa-nav {
@@ -8,12 +20,12 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: var(--z-nav);
-  padding: var(--space-4) var(--space-5);
-  background: rgba(13, 15, 11, 0.96);
+  z-index: 100;
+  padding: 1rem 1.25rem;
+  background: rgba(10, 15, 10, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(196, 154, 60, 0.25);
+  border-bottom: 1px solid rgba(196, 154, 60, 0.20);
 }
 
 .spa-nav__inner {
@@ -27,31 +39,29 @@
 
 .spa-nav__back {
   font-family: var(--font-body);
-  font-size: var(--text-xs);
-  color: var(--color-gold);
-  letter-spacing: var(--tracking-wide);
+  font-size: 0.7rem;
+  color: var(--spa-gold);
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  white-space: nowrap;
 }
 
 .spa-nav__title {
   font-family: var(--font-heading);
-  font-size: var(--text-base);
-  color: var(--color-white);
-  letter-spacing: var(--tracking-wider);
+  font-size: 1rem;
+  color: #FFFFFF;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   font-weight: 400;
 }
 
 .spa-nav__book {
   font-family: var(--font-body);
-  font-size: var(--text-xs);
-  color: var(--color-white);
-  letter-spacing: var(--tracking-wider);
+  font-size: 0.65rem;
+  color: #FFFFFF;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  padding: var(--space-2) var(--space-3);
-  border: 1px solid rgba(196, 154, 60, 0.5);
-  white-space: nowrap;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(196, 154, 60, 0.50);
 }
 
 /* --- HERO --- */
@@ -78,9 +88,9 @@
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(42, 51, 32, 0.85) 0%,
-    rgba(26, 31, 20, 0.75) 40%,
-    rgba(13, 15, 11, 0.92) 100%
+    rgba(10, 15, 10, 0.80) 0%,
+    rgba(28, 43, 28, 0.65) 40%,
+    rgba(10, 15, 10, 0.92) 100%
   );
   z-index: 1;
 }
@@ -89,32 +99,32 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: var(--space-20) var(--space-6) var(--space-16);
+  padding: 5rem 1.5rem 4rem;
   width: 100%;
   max-width: 480px;
 }
 
 .spa-hero__eyebrow {
   font-family: var(--font-body);
-  font-size: var(--text-xs);
-  color: var(--color-gold);
-  letter-spacing: var(--tracking-widest);
+  font-size: 0.7rem;
+  color: var(--spa-gold);
+  letter-spacing: 0.25em;
   text-transform: uppercase;
-  margin-bottom: var(--space-5);
+  margin-bottom: 1.5rem;
 }
 
 .spa-hero__title {
   font-family: var(--font-heading);
-  font-size: var(--text-5xl);
-  color: var(--color-white);
+  font-size: 4.5rem;
+  color: #FFFFFF;
   font-weight: 300;
-  letter-spacing: var(--tracking-wide);
+  letter-spacing: 0.08em;
   line-height: 0.95;
-  margin-bottom: var(--space-4);
+  margin-bottom: 1rem;
 }
 
 .spa-hero__title em {
-  color: var(--color-gold);
+  color: var(--spa-gold);
   font-style: italic;
   display: block;
 }
@@ -122,294 +132,340 @@
 .spa-hero__divider {
   width: 40px;
   height: 1px;
-  background: var(--color-gold);
-  margin: var(--space-5) auto;
+  background: var(--spa-gold);
+  margin: 1.5rem auto;
   opacity: 0.6;
 }
 
 .spa-hero__sub {
   font-family: var(--font-body);
-  font-size: var(--text-sm);
-  color: #F8F4EE;
-  line-height: var(--leading-loose);
-  margin-bottom: var(--space-8);
-  opacity: 0.9;
+  font-size: 0.875rem;
+  color: var(--spa-cream);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  opacity: 0.90;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .spa-hero__buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-3);
+  gap: 0.75rem;
 }
 
 .btn-spa-primary {
   display: inline-block;
-  background: var(--color-gold);
-  color: var(--color-dark);
+  background: var(--spa-gold);
+  color: #0A0F0A;
   font-family: var(--font-body);
-  font-size: var(--text-xs);
+  font-size: 0.7rem;
   font-weight: 600;
-  letter-spacing: var(--tracking-widest);
+  letter-spacing: 0.25em;
   text-transform: uppercase;
-  padding: var(--space-4) var(--space-10);
+  padding: 1rem 2.5rem;
   min-width: 220px;
   text-align: center;
-  transition: all var(--transition-base);
+  transition: all 280ms ease;
 }
 
 .btn-spa-primary:active {
-  background: var(--color-gold-dark);
+  background: #A8872E;
   transform: scale(0.98);
 }
 
 .btn-spa-ghost {
   display: inline-block;
   background: transparent;
-  color: var(--color-white);
+  color: #FFFFFF;
   font-family: var(--font-body);
-  font-size: var(--text-xs);
+  font-size: 0.7rem;
   font-weight: 500;
-  letter-spacing: var(--tracking-widest);
+  letter-spacing: 0.25em;
   text-transform: uppercase;
-  padding: var(--space-4) var(--space-10);
+  padding: 1rem 2.5rem;
   min-width: 220px;
   text-align: center;
-  border: 1px solid rgba(255,255,255,0.4);
-  transition: all var(--transition-base);
+  border: 1px solid rgba(255,255,255,0.35);
+  transition: all 280ms ease;
 }
 
 .btn-spa-ghost:active {
-  border-color: var(--color-gold);
-  color: var(--color-gold);
+  border-color: var(--spa-gold);
+  color: var(--spa-gold);
 }
 
 /* --- INTRO --- */
 .spa-intro {
-  background: var(--color-page);
-  border-bottom: 1px solid rgba(196, 154, 60, 0.15);
-  padding: var(--space-16) var(--space-6);
+  background: var(--spa-bg);
+  border-bottom: 1px solid rgba(196, 154, 60, 0.12);
+  padding: 4rem 1.5rem;
   text-align: center;
 }
 
 .spa-intro__inner {
-  max-width: 480px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
 .spa-intro__title {
   font-family: var(--font-heading);
-  font-size: var(--text-3xl);
-  color: var(--color-white);
+  font-size: 2.5rem;
+  color: #FFFFFF;
   font-weight: 300;
-  line-height: var(--leading-tight);
-  margin-bottom: var(--space-3);
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
 }
 
 .spa-intro__title em {
-  color: var(--color-gold);
+  color: var(--spa-gold);
   font-style: italic;
 }
 
 .spa-intro__divider {
   width: 40px;
   height: 1px;
-  background: var(--color-gold);
-  margin: var(--space-5) auto;
-  opacity: 0.5;
+  background: var(--spa-gold);
+  margin: 1.5rem auto;
+  opacity: 0.45;
 }
 
 .spa-intro__text {
   font-family: var(--font-body);
-  font-size: var(--text-sm);
-  color: var(--color-cream);
-  line-height: var(--leading-loose);
-  max-width: 340px;
-  margin: 0 auto;
+  font-size: 0.875rem;
+  color: var(--spa-cream);
+  line-height: 1.9;
+  opacity: 0.85;
 }
 
 /* --- SERVICES --- */
 .spa-services {
-  background: var(--color-page);
-  padding-bottom: var(--space-16);
+  background: var(--spa-bg);
+  padding-bottom: 4rem;
 }
 
 .spa-services__header {
   text-align: center;
-  padding: var(--space-12) var(--space-5) var(--space-8);
+  padding: 3rem 1.25rem 2rem;
 }
 
 .spa-services__title {
   font-family: var(--font-heading);
-  font-size: var(--text-4xl);
-  color: var(--color-white);
+  font-size: 3rem;
+  color: #FFFFFF;
   font-weight: 300;
-  line-height: var(--leading-tight);
+  line-height: 1.1;
 }
 
 .spa-services__title em {
-  color: var(--color-gold);
+  color: var(--spa-gold);
   font-style: italic;
 }
 
 .spa-services__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-3);
-  padding: 0 var(--space-4);
+  gap: 0.75rem;
+  padding: 0 1rem;
 }
 
 .spa-service-card {
-  background: var(--color-surface);
-  border: 1px solid rgba(196, 154, 60, 0.15);
-  padding: var(--space-6) var(--space-4);
+  background: var(--spa-surface);
+  border: 1px solid rgba(196, 154, 60, 0.12);
+  border-bottom: 2px solid var(--spa-gold);
+  padding: 1.5rem 1rem;
   text-align: center;
-  border-bottom: 2px solid var(--color-gold);
 }
 
 .spa-service-card__icon {
-  font-size: var(--text-2xl);
-  color: var(--color-gold);
-  margin-bottom: var(--space-3);
+  font-size: 1.75rem;
+  color: var(--spa-gold);
+  margin-bottom: 0.75rem;
   line-height: 1;
+  display: block;
 }
 
 .spa-service-card__title {
   font-family: var(--font-heading);
-  font-size: var(--text-lg);
-  color: var(--color-white);
+  font-size: 1.125rem;
+  color: #FFFFFF;
   font-weight: 400;
-  margin-bottom: var(--space-3);
-  line-height: var(--leading-snug);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
 }
 
 .spa-service-card__desc {
   font-family: var(--font-body);
-  font-size: var(--text-xs);
-  color: var(--color-cream);
-  line-height: var(--leading-loose);
-  margin-bottom: var(--space-4);
-  opacity: 0.8;
+  font-size: 0.7rem;
+  color: var(--spa-cream);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  opacity: 0.75;
 }
 
 .spa-service-card__price {
   font-family: var(--font-body);
-  font-size: var(--text-xs);
-  color: var(--color-gold);
-  letter-spacing: var(--tracking-wider);
+  font-size: 0.7rem;
+  color: var(--spa-gold);
+  letter-spacing: 0.15em;
   font-weight: 600;
 }
 
 /* --- FEATURES --- */
 .spa-features {
-  background: var(--color-surface);
-  border-top: 1px solid rgba(196, 154, 60, 0.15);
-  border-bottom: 1px solid rgba(196, 154, 60, 0.15);
-  padding: var(--space-16) var(--space-5);
+  background: var(--spa-surface);
+  border-top: 1px solid rgba(196, 154, 60, 0.12);
+  border-bottom: 1px solid rgba(196, 154, 60, 0.12);
+  padding: 4rem 1.5rem;
 }
 
 .spa-features__grid {
   display: flex;
   flex-direction: column;
-  gap: var(--space-8);
-  max-width: 480px;
+  gap: 2rem;
+  max-width: 420px;
   margin: 0 auto;
 }
 
 .spa-feature {
   display: flex;
-  gap: var(--space-5);
+  gap: 1.25rem;
   align-items: flex-start;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(196, 154, 60, 0.10);
+}
+
+.spa-feature:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .spa-feature__icon {
-  font-size: var(--text-xl);
-  color: var(--color-gold);
+  font-size: 1.25rem;
+  color: var(--spa-gold);
   flex-shrink: 0;
-  margin-top: var(--space-1);
+  margin-top: 0.25rem;
 }
 
 .spa-feature__title {
   font-family: var(--font-heading);
-  font-size: var(--text-xl);
-  color: var(--color-white);
+  font-size: 1.375rem;
+  color: #FFFFFF;
   font-weight: 400;
-  margin-bottom: var(--space-2);
+  margin-bottom: 0.5rem;
 }
 
 .spa-feature__desc {
   font-family: var(--font-body);
-  font-size: var(--text-sm);
-  color: var(--color-cream);
-  line-height: var(--leading-loose);
-  opacity: 0.8;
+  font-size: 0.875rem;
+  color: var(--spa-cream);
+  line-height: 1.8;
+  opacity: 0.80;
 }
 
 /* --- BOOKING --- */
 .spa-booking {
-  background: var(--color-page);
-  padding: var(--space-16) var(--space-6);
+  background: var(--spa-bg);
+  padding: 4rem 1.5rem;
   text-align: center;
 }
 
 .spa-booking__inner {
-  max-width: 480px;
+  max-width: 420px;
   margin: 0 auto;
 }
 
 .spa-booking__title {
   font-family: var(--font-heading);
-  font-size: var(--text-4xl);
-  color: var(--color-white);
+  font-size: 3rem;
+  color: #FFFFFF;
   font-weight: 300;
-  line-height: var(--leading-tight);
-  margin-bottom: var(--space-3);
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
 }
 
 .spa-booking__title em {
-  color: var(--color-gold);
+  color: var(--spa-gold);
   font-style: italic;
 }
 
 .spa-booking__divider {
   width: 40px;
   height: 1px;
-  background: var(--color-gold);
-  margin: var(--space-5) auto;
-  opacity: 0.5;
+  background: var(--spa-gold);
+  margin: 1.5rem auto;
+  opacity: 0.45;
 }
 
 .spa-booking__sub {
   font-family: var(--font-body);
-  font-size: var(--text-sm);
-  color: var(--color-cream);
-  line-height: var(--leading-loose);
-  margin-bottom: var(--space-8);
+  font-size: 0.875rem;
+  color: var(--spa-cream);
+  line-height: 1.8;
+  margin-bottom: 2rem;
   opacity: 0.85;
 }
 
-.spa-booking__actions {
+.spa-booking__form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: var(--space-3);
-  margin-bottom: var(--space-6);
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.spa-booking__input {
+  width: 100%;
+  background: var(--spa-surface);
+  border: 1px solid rgba(196, 154, 60, 0.20);
+  border-radius: 0;
+  padding: 1rem 1.25rem;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: #FFFFFF;
+  letter-spacing: 0.05em;
+  outline: none;
+  transition: border-color 280ms ease;
+}
+
+.spa-booking__input::placeholder {
+  color: rgba(255,255,255,0.30);
+  font-style: italic;
+}
+
+.spa-booking__input:focus {
+  border-color: var(--spa-gold);
+}
+
+.spa-booking__select {
+  width: 100%;
+  background: var(--spa-surface);
+  border: 1px solid rgba(196, 154, 60, 0.20);
+  padding: 1rem 1.25rem;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.60);
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .spa-booking__note {
   font-family: var(--font-body);
-  font-size: var(--text-xs);
-  color: var(--color-gold);
-  letter-spacing: var(--tracking-wider);
+  font-size: 0.65rem;
+  color: var(--spa-gold);
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  opacity: 0.7;
+  opacity: 0.70;
+  margin-top: 1rem;
 }
 
 /* --- FOOTER --- */
 .spa-footer {
-  background: var(--color-page);
-  border-top: 1px solid rgba(196, 154, 60, 0.15);
-  padding: var(--space-8) var(--space-5);
+  background: var(--spa-bg);
+  border-top: 1px solid rgba(196, 154, 60, 0.12);
+  padding: 2rem 1.25rem;
   text-align: center;
 }
 
@@ -420,23 +476,23 @@
 
 .spa-footer__back {
   font-family: var(--font-body);
-  font-size: var(--text-xs);
-  color: var(--color-gold);
-  letter-spacing: var(--tracking-wider);
+  font-size: 0.7rem;
+  color: var(--spa-gold);
+  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
 .spa-footer__divider {
   width: 40px;
   height: 1px;
-  background: var(--color-gold);
-  margin: var(--space-4) auto;
-  opacity: 0.3;
+  background: var(--spa-gold);
+  margin: 1rem auto;
+  opacity: 0.25;
 }
 
 .spa-footer__copy {
   font-family: var(--font-body);
-  font-size: var(--text-xs);
-  color: rgba(255,255,255,0.25);
-  letter-spacing: var(--tracking-wide);
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.20);
+  letter-spacing: 0.10em;
 }
