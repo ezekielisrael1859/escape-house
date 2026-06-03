@@ -4,12 +4,12 @@
    ============================================ */
 
 :root {
-  --spa-bg:        #0A0F0A;
-  --spa-surface:   #111A11;
-  --spa-green:     #1C2B1C;
-  --spa-green-2:   #243024;
-  --spa-gold:      #C49A3C;
-  --spa-gold-soft: #E2C97E;
+  --spa-bg:        #080F08;
+  --spa-surface:   #0D150D;
+  --spa-green:     #111C11;
+  --spa-green-2:   #162116;
+  --spa-gold:      #B8A96A;
+  --spa-gold-soft: #D4C48A;
   --spa-cream:     #E8E0D0;
   --spa-silver:    rgba(255,255,255,0.65);
 }
@@ -77,7 +77,7 @@
 .spa-hero__bg {
   position: absolute;
   inset: 0;
-  background-image: url('../../assets/images/hub/spa-thumb.jpg');
+  background-image: url('../../assets/images/spa/spa-hero.jpg');
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -495,4 +495,63 @@
   font-size: 0.65rem;
   color: rgba(255,255,255,0.20);
   letter-spacing: 0.10em;
+}
+/* --- INTRO IMAGE --- */
+.spa-intro {
+  background: var(--spa-bg);
+  border-bottom: 1px solid rgba(184, 169, 106, 0.12);
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.spa-intro__img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-image: url('../../assets/images/spa/spa-intro.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.spa-intro__img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(8, 15, 8, 0.85) 100%
+  );
+}
+
+.spa-intro__inner {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+/* --- FEATURES BACKGROUND --- */
+.spa-features {
+  background-image: url('../../assets/images/spa/spa-features.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.spa-features::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 15, 8, 0.88);
+}
+
+.spa-features__grid {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 420px;
+  margin: 0 auto;
 }
