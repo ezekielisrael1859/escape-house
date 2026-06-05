@@ -1,10 +1,27 @@
-/* ============================================
-   ESCAPE HOUSE SPA — BRANCH CSS
-   Same cinematic quality as hub page
-   Palette: Deep Teal + Amber Gold
-   ============================================ */
+/* ==========================================================================
+   Escape House Spa - Original Premium Layout Stylesheet
+   ========================================================================== */
 
-/* --- NAVIGATION --- */
+:root {
+  --color-bg: #050c0e;
+  --color-surface: #0a1417;
+  --color-primary: #122326;
+  --color-accent: #c49a3c;
+  --color-text-main: #ffffff;
+  --color-text-muted: #a3b8bc;
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
 .spa-nav {
   position: fixed;
   top: 0;
@@ -15,7 +32,7 @@
   background: rgba(5, 12, 14, 0.96);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(196, 154, 60, 0.20);
+  border-bottom: 1px solid rgba(196, 154, 60, 0.2);
 }
 
 .spa-nav__inner {
@@ -28,684 +45,169 @@
 }
 
 .spa-nav__back {
-  font-family: var(--font-body);
+  font-family: var(--font-sans);
   font-size: 0.7rem;
-  color: #C49A3C;
+  color: var(--color-accent);
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  white-space: nowrap;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .spa-nav__title {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  color: #FFFFFF;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
   font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--color-text-main);
 }
 
 .spa-nav__book {
-  font-family: var(--font-body);
-  font-size: 0.65rem;
-  color: #FFFFFF;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  padding: 0.5rem 0.75rem;
-  border: 1px solid rgba(196, 154, 60, 0.50);
-  white-space: nowrap;
+  color: var(--color-text-main);
+  text-decoration: none;
+  border: 1px solid var(--color-accent);
+  padding: 0.5rem 0.85rem;
 }
 
-/* --- HERO --- */
 .spa-hero {
-  min-height: 100svh;
   position: relative;
+  height: 45vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   overflow: hidden;
+  padding-top: 60px;
 }
 
 .spa-hero__bg {
   position: absolute;
-  inset: 0;
-  background-image: url('../../../assets/images/spa/spa-hero.jpg');
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.pexels.com/photos/3225578/pexels-photo-3225578.jpeg?auto=compress&cs=tinysrgb&w=800');
   background-size: cover;
   background-position: center;
-  z-index: 0;
-}
-
-.spa-hero__overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(5, 12, 14, 0.78) 0%,
-    rgba(5, 12, 14, 0.55) 40%,
-    rgba(5, 12, 14, 0.92) 100%
-  );
+  filter: brightness(0.4);
   z-index: 1;
 }
 
 .spa-hero__content {
   position: relative;
   z-index: 2;
-  text-align: center;
-  padding: 5rem 1.5rem 3rem;
-  width: 100%;
-  max-width: 480px;
-}
-
-.spa-hero__eyebrow {
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  color: #C49A3C;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
 }
 
 .spa-hero__title {
-  font-family: var(--font-heading);
-  font-size: 5.5rem;
-  color: #FFFFFF;
-  font-weight: 300;
-  letter-spacing: 0.08em;
-  line-height: 0.95;
-  margin-bottom: 1rem;
-}
-
-.spa-hero__title em {
-  color: #FFFFFF;
-  font-style: normal;
-  display: block;
-}
-
-.spa-hero__sub {
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  color: #C49A3C;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-}
-
-.spa-hero__divider {
-  width: 40px;
-  height: 1px;
-  background: #C49A3C;
-  margin: 1.5rem auto;
-  opacity: 0.6;
-}
-
-.spa-hero__tagline {
-  font-family: var(--font-script);
-  font-style: italic;
-  font-size: 1rem;
-  color: #E8E4DC;
-  line-height: 1.8;
-  margin-bottom: 2rem;
-  opacity: 0.90;
-}
-
-.spa-hero__buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-/* --- HERO INFOBAR --- */
-.spa-hero__infobar {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  background: rgba(5, 12, 14, 0.90);
-  backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(196, 154, 60, 0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 1.25rem;
-  gap: 1rem;
-}
-
-.spa-hero__info {
-  text-align: center;
-  flex: 1;
-}
-
-.spa-hero__info-label {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 0.6rem;
-  color: #C49A3C;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  margin-bottom: 0.25rem;
-}
-
-.spa-hero__info-value {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 0.65rem;
-  color: #F8F4EE;
-  letter-spacing: 0.10em;
-  font-weight: 500;
-}
-
-.spa-hero__info-divider {
-  width: 1px;
-  height: 28px;
-  background: rgba(196, 154, 60, 0.25);
-  flex-shrink: 0;
-}
-
-/* --- BUTTONS --- */
-.btn-spa-gold {
-  display: inline-block;
-  background: #C49A3C;
-  color: #050C0E;
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  padding: 1rem 2.5rem;
-  min-width: 220px;
-  text-align: center;
-  transition: all 280ms ease;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  max-width: 320px;
-}
-
-.btn-spa-gold:active {
-  background: #A8872E;
-  transform: scale(0.98);
-}
-
-.btn-spa-ghost {
-  display: inline-block;
-  background: transparent;
-  color: #FFFFFF;
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  padding: 1rem 2.5rem;
-  min-width: 220px;
-  text-align: center;
-  border: 1px solid rgba(255,255,255,0.35);
-  transition: all 280ms ease;
-  width: 100%;
-  max-width: 320px;
-}
-
-.btn-spa-ghost:active {
-  border-color: #C49A3C;
-  color: #C49A3C;
-}
-
-.btn-spa-whatsapp {
-  display: inline-block;
-  background: #25D366;
-  color: #FFFFFF;
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  padding: 1rem 2rem;
-  min-width: 200px;
-  text-align: center;
-  transition: all 280ms ease;
-}
-
-/* --- SHARED STYLES --- */
-.spa-label {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  color: #C49A3C;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  margin-bottom: 0.75rem;
-}
-
-.spa-divider {
-  width: 40px;
-  height: 1px;
-  background: #C49A3C;
-  margin: 1.5rem auto;
-  opacity: 0.5;
-}
-
-.spa-section-title {
-  font-family: var(--font-heading);
-  font-size: 3rem;
-  color: #FFFFFF;
-  font-weight: 300;
-  line-height: 1.1;
-  margin-bottom: 0.75rem;
-}
-
-.spa-section-title em {
-  color: #C49A3C;
-  font-style: italic;
-}
-
-/* --- INTRO --- */
-.spa-intro {
-  background: #050C0E;
-  border-bottom: 1px solid rgba(196, 154, 60, 0.12);
-  text-align: center;
-  overflow: hidden;
-}
-
-.spa-intro__img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background-image: url('../../../assets/images/spa/spa-intro.jpg');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.spa-intro__img::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(5, 12, 14, 0.90) 100%
-  );
-}
-
-.spa-intro__inner {
-  max-width: 420px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem 4rem;
-}
-
-.spa-intro__title {
-  font-family: var(--font-heading);
-  font-size: 2.5rem;
-  color: #FFFFFF;
-  font-weight: 300;
-  line-height: 1.1;
-  margin-bottom: 0.75rem;
-}
-
-.spa-intro__title em {
-  color: #C49A3C;
-  font-style: italic;
-}
-
-.spa-intro__text {
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  color: #E8E4DC;
-  line-height: 1.9;
-  opacity: 0.85;
-}
-
-/* --- SERVICES (WITH IMAGE BACKGROUND CAPABILITIES) --- */
-.spa-services {
-  background: #050C0E;
-  padding-bottom: 4rem;
-  border-bottom: 1px solid rgba(196, 154, 60, 0.12);
-}
-
-.spa-services__header {
-  text-align: center;
-  padding: 4rem 1.25rem 2rem;
-}
-
-.spa-services__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
-  padding: 0 1rem;
-}
-
-.spa-service-card {
-  position: relative;
-  overflow: hidden;
-  background: #091215;
-  border: 1px solid rgba(196, 154, 60, 0.12);
-  border-bottom: 2px solid #C49A3C;
-  padding: 2rem 1rem;
-  text-align: center;
-  display: block;
-  text-decoration: none;
-  cursor: pointer;
-  transition: border-color 280ms ease;
-}
-
-.spa-service-card__bg {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  z-index: 0;
-  transition: transform 500ms ease;
-}
-
-/* Luxury dark overlay layer to keep card text readable over photos */
-.spa-service-card__overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(5, 12, 14, 0.75) 0%,
-    rgba(5, 12, 14, 0.92) 100%
-  );
-  z-index: 1;
-}
-
-.spa-service-card__content {
-  position: relative;
-  z-index: 2;
-}
-
-/* Smooth zoom transition on hover/touch interactions */
-.spa-service-card:active .spa-service-card__bg {
-  transform: scale(1.08);
-}
-
-.spa-service-card:active {
-  border-color: #C49A3C;
-  border-bottom-color: #E2C97E;
-}
-
-.spa-service-card__top {
-  margin-bottom: 0.75rem;
-}
-
-.spa-service-card__icon {
-  font-size: 1.5rem;
-  color: #C49A3C;
-  display: block;
-  margin-bottom: 0.5rem;
-  line-height: 1;
-}
-
-.spa-service-card__title {
-  font-family: var(--font-heading);
-  font-size: 1.125rem;
-  color: #FFFFFF;
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
   font-weight: 400;
-  line-height: 1.3;
-}
-
-.spa-service-card__desc {
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  color: #E8E4DC;
-  line-height: 1.7;
-  margin-bottom: 1rem;
-  opacity: 0.85;
-}
-
-.spa-service-card__price {
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  color: #C49A3C;
-  letter-spacing: 0.15em;
-  font-weight: 600;
-}
-
-/* --- INDIVIDUAL SERVICE CARD IMAGE ASSETS --- */
-.card-massage .spa-service-card__bg  { background-image: url('../../../assets/images/spa/treatments/massage.jpg'); }
-.card-facials .spa-service-card__bg  { background-image: url('../../../assets/images/spa/treatments/facial.jpg'); }
-.card-body .spa-service-card__bg     { background-image: url('../../../assets/images/spa/treatments/body.jpg'); }
-.card-wellness .spa-service-card__bg { background-image: url('../../../assets/images/spa/treatments/wellness.jpg'); }
-.card-nails .spa-service-card__bg    { background-image: url('../../../assets/images/spa/treatments/nails.jpg'); }
-.card-couples .spa-service-card__bg  { background-image: url('../../../assets/images/spa/treatments/couples.jpg'); }
-.card-sauna .spa-service-card__bg    { background-image: url('../../../assets/images/spa/treatments/sauna.jpg'); }
-.card-waxing .spa-service-card__bg   { background-image: url('../../../assets/images/spa/treatments/waxing.jpg'); }
-
-/* --- FEATURES --- */
-.spa-features {
-  background-image: url('../../../assets/images/spa/spa-features.jpg');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  border-bottom: 1px solid rgba(196, 154, 60, 0.12);
-}
-
-.spa-features::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(5, 12, 14, 0.90);
-}
-
-.spa-features__inner {
-  position: relative;
-  z-index: 1;
-  padding: 4rem 1.5rem;
-  text-align: center;
-  max-width: 480px;
-  margin: 0 auto;
-}
-
-.spa-features__grid {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  margin-top: 1rem;
-}
-
-.spa-feature {
-  display: flex;
-  gap: 1.25rem;
-  align-items: flex-start;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid rgba(196, 154, 60, 0.10);
-  text-align: left;
-}
-
-.spa-feature:last-child {
-  border-bottom: none;
-}
-
-.spa-feature__icon {
-  font-size: 1.25rem;
-  color: #C49A3C;
-  flex-shrink: 0;
-  margin-top: 0.25rem;
-}
-
-.spa-feature__title {
-  font-family: var(--font-heading);
-  font-size: 1.375rem;
-  color: #FFFFFF;
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-}
-
-.spa-feature__desc {
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  color: #E8E4DC;
-  line-height: 1.8;
-  opacity: 0.80;
-}
-
-/* --- STATISTICS --- */
-.spa-stats {
-  background: #091215;
-  padding: 3rem 1.5rem;
-  border-bottom: 1px solid rgba(196, 154, 60, 0.12);
-}
-
-.spa-stats__inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  max-width: 480px;
-  margin: 0 auto;
-}
-
-.spa-stat {
-  text-align: center;
-  flex: 1;
-}
-
-.spa-stat__num {
-  display: block;
-  font-family: var(--font-heading);
-  font-size: 3rem;
-  color: #C49A3C;
-  line-height: 1;
-  margin-bottom: 0.5rem;
-}
-
-.spa-stat__label {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 0.6rem;
-  color: #F8F4EE;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  opacity: 0.75;
-}
-
-.spa-stats__line {
-  width: 1px;
-  height: 50px;
-  background: rgba(196, 154, 60, 0.25);
-  flex-shrink: 0;
-}
-
-/* --- BOOKING --- */
-.spa-booking {
-  background: #050C0E;
-  padding: 4rem 1.5rem;
-  text-align: center;
-  border-bottom: 1px solid rgba(196, 154, 60, 0.12);
-}
-
-.spa-booking__inner {
-  max-width: 420px;
-  margin: 0 auto;
-}
-
-.spa-booking__sub {
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  color: #E8E4DC;
-  line-height: 1.8;
-  margin-bottom: 2rem;
-  opacity: 0.85;
-}
-
-.spa-booking__form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin-bottom: 2rem;
-}
-
-.spa-input {
-  width: 100%;
-  background: #091215;
-  border: 1px solid rgba(196, 154, 60, 0.20);
-  padding: 1rem 1.25rem;
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  color: #FFFFFF;
   letter-spacing: 0.05em;
-  outline: none;
-  transition: border-color 280ms ease;
+  margin: 0 0 0.5rem 0;
+  color: var(--color-text-main);
 }
 
-.spa-input::placeholder {
-  color: rgba(255,255,255,0.30);
-  font-style: italic;
-}
-
-.spa-input:focus {
-  border-color: #C49A3C;
-}
-
-.spa-select {
-  width: 100%;
-  background: #091215;
-  border: 1px solid rgba(196, 154, 60, 0.20);
-  padding: 1rem 1.25rem;
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  color: rgba(255,255,255,0.60);
-  outline: none;
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-.spa-textarea {
-  min-height: 100px;
-  resize: none;
-}
-
-.spa-booking__contact {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(196, 154, 60, 0.15);
-}
-
-.spa-booking__note {
-  font-family: var(--font-body);
+.spa-hero__subtitle {
+  font-family: var(--font-sans);
   font-size: 0.75rem;
-  color: #E8E4DC;
-  letter-spacing: 0.10em;
-  margin-bottom: 1rem;
-  opacity: 0.70;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0;
 }
 
-.spa-booking__links {
-  display: flex;
-  justify-content: center;
-}
-
-/* --- FOOTER --- */
-.spa-footer {
-  background: #050C0E;
-  border-top: 1px solid rgba(196, 154, 60, 0.15);
-  padding: 2rem 1.25rem;
-  text-align: center;
-}
-
-.spa-footer__inner {
+.spa-menu-section {
+  padding: 2.5rem 1.25rem 4rem 1.25rem;
   max-width: 480px;
   margin: 0 auto;
 }
 
-.spa-footer__back {
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  color: #C49A3C;
-  letter-spacing: 0.15em;
+.spa-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.spa-card {
+  position: relative;
+  height: 320px;
+  border: 1px solid var(--color-accent);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  text-decoration: none;
+  background-color: var(--color-surface);
+}
+
+.spa-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(5, 12, 14, 0.75);
+  z-index: 2;
+}
+
+.spa-card__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.spa-card__badge {
+  position: relative;
+  z-index: 3;
+  font-size: 1.2rem;
+  color: var(--color-accent);
+  margin-bottom: auto;
+}
+
+.spa-card__content {
+  position: relative;
+  z-index: 3;
+}
+
+.spa-card__title {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem 0;
+  color: var(--color-text-main);
+  text-align: center;
+}
+
+.spa-card__desc {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  margin: 0 0 1.25rem 0;
+  text-align: center;
+}
+
+.spa-card__price {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-}
-
-.spa-footer__divider {
-  width: 40px;
-  height: 1px;
-  background: #C49A3C;
-  margin: 1rem auto;
-  opacity: 0.25;
-}
-
-.spa-footer__copy {
-  font-family: var(--font-body);
-  font-size: 0.65rem;
-  color: rgba(255,255,255,0.20);
-  letter-spacing: 0.10em;
+  color: var(--color-accent);
+  margin: 0;
+  text-align: center;
 }
