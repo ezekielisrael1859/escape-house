@@ -117,8 +117,8 @@
 }
 
 .spa-hero__title em {
-  color: #C49A3C;
-  font-style: italic;
+  color: #FFFFFF;
+  font-style: normal;
   display: block;
 }
 
@@ -656,4 +656,15 @@
   font-size: 0.65rem;
   color: rgba(255,255,255,0.20);
   letter-spacing: 0.10em;
+}
+a.spa-service-card {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color 280ms ease;
+}
+
+a.spa-service-card:active {
+  border-color: #C49A3C;
+  border-bottom-color: #E2C97E;
 }
