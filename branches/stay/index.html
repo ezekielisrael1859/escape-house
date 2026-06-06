@@ -1,265 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Escape House Hotel Apartments — Luxury Boutique Staycations, Maitama Abuja" />
-  <title>Escape House Hotel Apartments</title>
-  <link rel="stylesheet" href="../../assets/css/tokens.css" />
-  <link rel="stylesheet" href="../../assets/css/base.css" />
-  <link rel="stylesheet" href="../../assets/css/components.css" />
-  <link rel="stylesheet" href="css/stay.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Suite Collection | Escape House</title>
+    <!-- Keep your existing stylesheet link exactly as it is configured in your project -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for global high-end typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <!-- NAVIGATION -->
-  <header class="stay-nav">
-    <div class="stay-nav__inner">
-      <a href="/escape-house/" class="stay-nav__back">← Escape House</a>
-      <h1 class="stay-nav__title">Hotel Apartments</h1>
-      <a href="#booking" class="stay-nav__book">Book Now</a>
-    </div>
-  </header>
+    <!-- --- HEADER APP CONTEXT --- -->
+    <header>
+        <button class="nav-back" aria-label="Go Back">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        </button>
+        <div class="brand-logo">Escape House</div>
+        <a href="#reserve" class="nav-cta">Book</a>
+    </header>
 
-  <!-- HERO -->
-  <section class="stay-hero">
-    <div class="stay-hero__bg"></div>
-    <div class="stay-hero__overlay"></div>
-    <div class="stay-hero__content">
-      <p class="stay-hero__eyebrow">Escape House · Maitama, Abuja</p>
-      <h2 class="stay-hero__title">
-        Escape<br>
-        <em>House Stay</em>
-      </h2>
-      <p class="stay-hero__sub">Hotel Apartments · Maitama · Abuja</p>
-      <div class="stay-hero__divider"></div>
-      <p class="stay-hero__tagline">Where luxury living meets the comfort<br>of home — reimagined</p>
-      <div class="stay-hero__buttons">
-        <a href="#rooms" class="btn-stay-primary">View Our Rooms</a>
-        <a href="#booking" class="btn-stay-ghost">Reserve Now</a>
-      </div>
-    </div>
-    <div class="stay-hero__infobar">
-      <div class="stay-hero__info">
-        <span class="stay-hero__info-label">Location</span>
-        <span class="stay-hero__info-value">34 Usuma Street, Maitama</span>
-      </div>
-      <div class="stay-hero__info-divider"></div>
-      <div class="stay-hero__info">
-        <span class="stay-hero__info-label">Check In</span>
-        <span class="stay-hero__info-value">From 2:00 PM</span>
-      </div>
-      <div class="stay-hero__info-divider"></div>
-      <div class="stay-hero__info">
-        <span class="stay-hero__info-label">Check Out</span>
-        <span class="stay-hero__info-value">By 12:00 PM</span>
-      </div>
-    </div>
-  </section>
+    <!-- --- HERO TEXT BLOCK --- -->
+    <section class="hero-section">
+        <span class="meta-text">The Wing</span>
+        <h1 class="editorial-title">The Suite <em>Collection</em></h1>
+        <p class="hero-description">An elite framework of private hotel apartments tailored beautifully for deep decompression, physical luxury, and architectural isolation.</p>
+    </section>
 
-  <!-- INTRO -->
-  <section class="stay-intro">
-    <div class="stay-intro__img"></div>
-    <div class="stay-intro__inner">
-      <span class="stay-label">Our Apartments</span>
-      <h2 class="stay-intro__title">More Than<br><em>A Hotel</em></h2>
-      <div class="stay-divider"></div>
-      <p class="stay-intro__text">Escape House Hotel Apartments redefines the staycation experience in Abuja. Each apartment is meticulously designed to offer the privacy of home with the indulgence of a five-star hotel — perfect for business travellers, couples and families seeking something truly special.</p>
-    </div>
-  </section>
+    <!-- --- 2-COLUMN SUITE COLLECTION GRID --- -->
+    <main class="grid-container">
 
-  <!-- ROOMS GRID -->
-  <section class="stay-rooms" id="rooms">
-    <div class="stay-rooms__header">
-      <span class="stay-label">Accommodation</span>
-      <h2 class="stay-section-title">Our<br><em>Apartments</em></h2>
-    </div>
-    <div class="stay-rooms__grid">
+        <!-- 1. CLASSIC SUITE -->
+        <article class="suite-card">
+            <div class="suite-image-wrapper">
+                <img src="images/hotel/classic-suite.jpg" alt="Classic Suite" class="suite-img">
+                <div class="suite-image-overlay"></div>
+                <div class="suite-glyph">✦</div>
+            </div>
+            <div class="suite-details">
+                <h3 class="editorial-title suite-title">Classic Suite</h3>
+                <p class="suite-desc">Tailored elegance for the discerning traveler, blending rich tactile materials with quiet, understated comfort.</p>
+                <div class="suite-meta-row">
+                    <span class="suite-price">₦180,000 / night</span>
+                    <a href="#reserve" class="suite-action-link">Select</a>
+                </div>
+            </div>
+        </article>
 
-      <!-- Classic Suite -->
-      <a href="#booking" class="stay-room-card" style="background-image: url('../../assets/images/stay/classic.jpg');">
-        <div class="stay-room-card__overlay"></div>
-        <div class="stay-room-card__content">
-          <div class="stay-room-card__top">
-            <span class="stay-room-card__icon">◇</span>
-            <h3 class="stay-room-card__title">Classic Suite</h3>
-          </div>
-          <p class="stay-room-card__desc">Elegantly appointed room with premium furnishings, king bed and ensuite bathroom.</p>
-          <span class="stay-room-card__price">From ₦45,000 / night</span>
+        <!-- 2. DELUXE SUITE -->
+        <article class="suite-card">
+            <div class="suite-image-wrapper">
+                <img src="images/hotel/deluxe-suite.jpg" alt="Deluxe Suite" class="suite-img">
+                <div class="suite-image-overlay"></div>
+                <div class="suite-glyph">✦ ✦</div>
+            </div>
+            <div class="suite-details">
+                <h3 class="editorial-title suite-title">Deluxe Suite</h3>
+                <p class="suite-desc">An expansive layout merging bespoke interior aesthetics with sweeping views of the Maitama skyline.</p>
+                <div class="suite-meta-row">
+                    <span class="suite-price">₦250,000 / night</span>
+                    <a href="#reserve" class="suite-action-link">Select</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- 3. EXECUTIVE SUITE -->
+        <article class="suite-card">
+            <div class="suite-image-wrapper">
+                <img src="images/hotel/executive-suite.jpg" alt="Executive Suite" class="suite-img">
+                <div class="suite-image-overlay"></div>
+                <div class="suite-glyph">✦ ✦ ✦</div>
+            </div>
+            <div class="suite-details">
+                <h3 class="editorial-title suite-title">Executive Suite</h3>
+                <p class="suite-desc">A masterfully appointed residence featuring an integrated culinary space and sophisticated zones designed for effortless living.</p>
+                <div class="suite-meta-row">
+                    <span class="suite-price">₦380,000 / night</span>
+                    <a href="#reserve" class="suite-action-link">Select</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- 4. PENTHOUSE SUITE -->
+        <article class="suite-card">
+            <div class="suite-image-wrapper">
+                <img src="images/hotel/penthouse-suite.jpg" alt="Penthouse Suite" class="suite-img">
+                <div class="suite-image-overlay"></div>
+                <div class="suite-glyph">★</div>
+            </div>
+            <div class="suite-details">
+                <h3 class="editorial-title suite-title">Penthouse Suite</h3>
+                <p class="suite-desc">The absolute pinnacle of the collection—panoramic vistas paired with uncompromising, custom architectural grandeur.</p>
+                <div class="suite-meta-row">
+                    <span class="suite-price">₦650,000 / night</span>
+                    <a href="#reserve" class="suite-action-link">Select</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- 5. FAMILY APARTMENT -->
+        <article class="suite-card">
+            <div class="suite-image-wrapper">
+                <img src="images/hotel/family-apartment.jpg" alt="Family Apartment" class="suite-img">
+                <div class="suite-image-overlay"></div>
+                <div class="suite-glyph">◆</div>
+            </div>
+            <div class="suite-details">
+                <h3 class="editorial-title suite-title">Family Apartment</h3>
+                <p class="suite-desc">Artfully designed multi-room living offering a seamless balance of shared connection and private tranquility.</p>
+                <div class="suite-meta-row">
+                    <span class="suite-price">₦450,000 / night</span>
+                    <a href="#reserve" class="suite-action-link">Select</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- 6. COUPLES RETREAT -->
+        <article class="suite-card">
+            <div class="suite-image-wrapper">
+                <img src="images/hotel/couples-retreat.jpg" alt="Couples Retreat" class="suite-img">
+                <div class="suite-image-overlay"></div>
+                <div class="suite-glyph">♥</div>
+            </div>
+            <div class="suite-details">
+                <h3 class="editorial-title suite-title">Couples Retreat</h3>
+                <p class="suite-desc">A highly curated, intimate environment dedicated entirely to sensory relaxation and deep, uninterrupted connection.</p>
+                <div class="suite-meta-row">
+                    <span class="suite-price">₦300,000 / night</span>
+                    <a href="#reserve" class="suite-action-link">Select</a>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- --- DIGITAL CONCIERGE BOOKING DESK --- -->
+    <section class="booking-section" id="reserve">
+        <div class="booking-container">
+            <div class="booking-header">
+                <span class="meta-text">Reservation Desk</span>
+                <h2 class="editorial-title">Secure Your Stay</h2>
+            </div>
+            <form class="booking-form" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <label for="suite-selection">Select Suite Wing</label>
+                    <select id="suite-selection">
+                        <option value="classic">Classic Suite — ₦180,000</option>
+                        <option value="deluxe">Deluxe Suite — ₦250,000</option>
+                        <option value="executive">Executive Suite — ₦380,000</option>
+                        <option value="penthouse">Penthouse Suite — ₦650,000</option>
+                        <option value="family">Family Apartment — ₦450,000</option>
+                        <option value="couples">Couples Retreat — ₦300,000</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="checkin">Check-In Date</label>
+                    <input type="date" id="checkin">
+                </div>
+                <div class="form-group">
+                    <label for="checkout">Check-Out Date</label>
+                    <input type="date" id="checkout">
+                </div>
+                <button type="submit" class="submit-btn">Request Reservation</button>
+            </form>
         </div>
-      </a>
-
-      <!-- Deluxe Suite -->
-      <a href="#booking" class="stay-room-card" style="background-image: url('../../assets/images/stay/deluxe.jpg');">
-        <div class="stay-room-card__overlay"></div>
-        <div class="stay-room-card__content">
-          <div class="stay-room-card__top">
-            <span class="stay-room-card__icon">✦</span>
-            <h3 class="stay-room-card__title">Deluxe Suite</h3>
-          </div>
-          <p class="stay-room-card__desc">Spacious suite with separate living area, premium amenities and city views.</p>
-          <span class="stay-room-card__price">From ₦65,000 / night</span>
-        </div>
-      </a>
-
-      <!-- Executive Suite -->
-      <a href="#booking" class="stay-room-card" style="background-image: url('../../assets/images/stay/executive.jpg');">
-        <div class="stay-room-card__overlay"></div>
-        <div class="stay-room-card__content">
-          <div class="stay-room-card__top">
-            <span class="stay-room-card__icon">❧</span>
-            <h3 class="stay-room-card__title">Executive Suite</h3>
-          </div>
-          <p class="stay-room-card__desc">Premium executive apartment with full kitchen, dining area and luxury finishes.</p>
-          <span class="stay-room-card__price">From ₦90,000 / night</span>
-        </div>
-      </a>
-
-      <!-- Penthouse Suite -->
-      <a href="#booking" class="stay-room-card" style="background-image: url('../../assets/images/stay/penthouse.jpg');">
-        <div class="stay-room-card__overlay"></div>
-        <div class="stay-room-card__content">
-          <div class="stay-room-card__top">
-            <span class="stay-room-card__icon">◈</span>
-            <h3 class="stay-room-card__title">Penthouse Suite</h3>
-          </div>
-          <p class="stay-room-card__desc">The ultimate luxury experience — our most exclusive apartment with panoramic views.</p>
-          <span class="stay-room-card__price">From ₦150,000 / night</span>
-        </div>
-      </a>
-
-      <!-- Family Apartment -->
-      <a href="#booking" class="stay-room-card" style="background-image: url('../../assets/images/stay/family.jpg');">
-        <div class="stay-room-card__overlay"></div>
-        <div class="stay-room-card__content">
-          <div class="stay-room-card__top">
-            <span class="stay-room-card__icon">✿</span>
-            <h3 class="stay-room-card__title">Family Apartment</h3>
-          </div>
-          <p class="stay-room-card__desc">Spacious two-bedroom apartment designed for families seeking comfort and privacy.</p>
-          <span class="stay-room-card__price">From ₦120,000 / night</span>
-        </div>
-      </a>
-
-      <!-- Couples Retreat -->
-      <a href="#booking" class="stay-room-card" style="background-image: url('../../assets/images/stay/couples.jpg');">
-        <div class="stay-room-card__overlay"></div>
-        <div class="stay-room-card__content">
-          <div class="stay-room-card__top">
-            <span class="stay-room-card__icon">◉</span>
-            <h3 class="stay-room-card__title">Couples Retreat</h3>
-          </div>
-          <p class="stay-room-card__desc">Romantically designed suite with special amenities curated for couples.</p>
-          <span class="stay-room-card__price">From ₦75,000 / night</span>
-        </div>
-      </a>
-
-    </div>
-  </section>
-
-  <!-- FEATURES -->
-  <section class="stay-features">
-    <div class="stay-features__inner">
-      <span class="stay-label">Why Stay With Us</span>
-      <h2 class="stay-section-title">The Escape<br><em>Difference</em></h2>
-      <div class="stay-divider"></div>
-      <div class="stay-features__grid">
-        <div class="stay-feature">
-          <span class="stay-feature__icon">✦</span>
-          <div>
-            <h3 class="stay-feature__title">24/7 Concierge</h3>
-            <p class="stay-feature__desc">Round the clock personal concierge service for all your needs during your stay.</p>
-          </div>
-        </div>
-        <div class="stay-feature">
-          <span class="stay-feature__icon">❧</span>
-          <div>
-            <h3 class="stay-feature__title">Spa Access</h3>
-            <p class="stay-feature__desc">Exclusive access to Escape House Spa treatments and wellness facilities.</p>
-          </div>
-        </div>
-        <div class="stay-feature">
-          <span class="stay-feature__icon">◇</span>
-          <div>
-            <h3 class="stay-feature__title">Fine Dining</h3>
-            <p class="stay-feature__desc">In-room dining from our award winning restaurant available around the clock.</p>
-          </div>
-        </div>
-        <div class="stay-feature">
-          <span class="stay-feature__icon">◈</span>
-          <div>
-            <h3 class="stay-feature__title">Premium Security</h3>
-            <p class="stay-feature__desc">Discreet, professional security ensuring total safety and privacy at all times.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- STATISTICS -->
-  <section class="stay-stats">
-    <div class="stay-stats__inner">
-      <div class="stay-stat">
-        <span class="stay-stat__num">6</span>
-        <span class="stay-stat__label">Suite Types</span>
-      </div>
-      <div class="stay-stats__line"></div>
-      <div class="stay-stat">
-        <span class="stay-stat__num">24/7</span>
-        <span class="stay-stat__label">Concierge</span>
-      </div>
-      <div class="stay-stats__line"></div>
-      <div class="stay-stat">
-        <span class="stay-stat__num">5★</span>
-        <span class="stay-stat__label">Experience</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- BOOKING -->
-  <section class="stay-booking" id="booking">
-    <div class="stay-booking__inner">
-      <span class="stay-label">Reserve Your Stay</span>
-      <h2 class="stay-section-title">Book A<br><em>Room</em></h2>
-      <div class="stay-divider"></div>
-      <p class="stay-booking__sub">Fill the form below and we will confirm your reservation within 24 hours via WhatsApp or Email.</p>
-      <div class="stay-booking__form">
-        <input class="stay-input" type="text" placeholder="Your Full Name" />
-        <input class="stay-input" type="tel" placeholder="WhatsApp Number" />
-        <input class="stay-input" type="email" placeholder="Email Address" />
-        <select class="stay-select">
-          <option value="" disabled selected>Select Room Type</option>
-          <option>Classic Suite</option>
-          <option>Deluxe Suite</option>
-          <option>Executive Suite</option>
-          <option>Penthouse Suite</option>
-          <option>Family Apartment</option>
-          <option>Couples Retreat</option>
-        </select>
-        <input class="stay-input" type="date" placeholder="Check In Date" />
-        <input class="stay-input" type="date" placeholder="Check Out Date" />
-        <input class="stay-input" type="number" placeholder="Number of Guests" min="1" max="10" />
-        <textarea class="stay-input stay-textarea" placeholder="Special requests (optional)"></textarea>
-        <button class="btn-stay-primary">Request Reservation</button>
-      </div>
-      <div class="stay-booking__contact">
-        <p class="stay-booking__note">Prefer to reach us directly?</p>
-        <div class="stay-booking__links">
-          <a href="https://wa.me/2340000000000" class="btn-stay-whatsapp">WhatsApp Us</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="stay-footer">
-    <div class="stay-footer__inner">
-      <a href="/escape-house/" class="stay-footer__back">← Back to Escape House</a>
-      <div class="stay-footer__divider"></div>
-      <p class="stay-footer__copy">© 2026 Escape House Abuja. All rights reserved.</p>
-    </div>
-  </footer>
+    </section>
 
 </body>
 </html>
