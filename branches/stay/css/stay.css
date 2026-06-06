@@ -1,19 +1,18 @@
 /* ============================================
    ESCAPE HOUSE HOTEL APARTMENTS — BRANCH CSS
-   Palette: Warm Minimalist Luxury
+   Palette: Dark Warm Luxury — Charcoal & Gold
    ============================================ */
 
-/* ============================================
-   WARM MINIMALIST LUXURY — COLOR TOKENS
-   ============================================ */
 :root {
-  --bg-white:     #FFFFFF;
-  --bg-cream:     #F9F8F6;
-  --text-primary: #1A1A1A;
-  --text-muted:   #6B6560;
-  --accent-gold:  #C4B5A5;
-  --obsidian:     #111111;
-  --border:       rgba(196, 181, 165, 0.25);
+  --bg-dark:      #0E0E0E;
+  --bg-card:      #1C1612;
+  --bg-section:   #141210;
+  --text-primary: #F5F0E8;
+  --text-muted:   #A89880;
+  --accent-gold:  #B8975A;
+  --accent-light: #D4B483;
+  --border:       rgba(184, 151, 90, 0.20);
+  --obsidian:     #0A0A0A;
 }
 
 /* --- NAVIGATION --- */
@@ -24,7 +23,7 @@
   right: 0;
   z-index: 100;
   padding: 1rem 1.25rem;
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(14, 14, 14, 0.96);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
@@ -93,9 +92,9 @@
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.10) 0%,
-    rgba(10, 10, 10, 0.45) 40%,
-    rgba(10, 10, 10, 0.88) 100%
+    rgba(14, 14, 14, 0.55) 0%,
+    rgba(14, 14, 14, 0.40) 40%,
+    rgba(14, 14, 14, 0.92) 100%
   );
   z-index: 1;
 }
@@ -121,7 +120,7 @@
 .stay-hero__title {
   font-family: var(--font-heading);
   font-size: 5.5rem;
-  color: #FFFFFF;
+  color: var(--text-primary);
   font-weight: 300;
   letter-spacing: 0.08em;
   line-height: 0.95;
@@ -129,7 +128,7 @@
 }
 
 .stay-hero__title em {
-  color: #FFFFFF;
+  color: var(--accent-light);
   font-style: italic;
   display: block;
 }
@@ -155,10 +154,10 @@
   font-family: var(--font-script);
   font-style: italic;
   font-size: 1rem;
-  color: #F0EDE8;
+  color: var(--text-primary);
   line-height: 1.8;
   margin-bottom: 2rem;
-  opacity: 0.90;
+  opacity: 0.85;
 }
 
 .stay-hero__buttons {
@@ -173,9 +172,9 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(14, 14, 14, 0.88);
   backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(196, 181, 165, 0.25);
+  border-top: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,7 +201,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #F0EDE8;
+  color: var(--text-primary);
   letter-spacing: 0.10em;
   font-weight: 500;
 }
@@ -210,15 +209,15 @@
 .stay-hero__info-divider {
   width: 1px;
   height: 28px;
-  background: rgba(196, 181, 165, 0.25);
+  background: var(--border);
   flex-shrink: 0;
 }
 
 /* --- BUTTONS --- */
 .btn-stay-primary {
   display: inline-block;
-  background: var(--obsidian);
-  color: #FFFFFF;
+  background: var(--accent-gold);
+  color: var(--obsidian);
   font-family: var(--font-body);
   font-size: 0.7rem;
   font-weight: 600;
@@ -235,20 +234,19 @@
 }
 
 .btn-stay-primary:hover {
-  background: var(--accent-gold);
+  background: var(--accent-light);
   color: var(--obsidian);
 }
 
 .btn-stay-primary:active {
-  background: var(--accent-gold);
-  color: var(--obsidian);
+  background: var(--accent-light);
   transform: scale(0.98);
 }
 
 .btn-stay-ghost {
   display: inline-block;
   background: transparent;
-  color: #FFFFFF;
+  color: var(--text-primary);
   font-family: var(--font-body);
   font-size: 0.7rem;
   font-weight: 500;
@@ -257,7 +255,7 @@
   padding: 1rem 2.5rem;
   min-width: 220px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(245, 240, 232, 0.35);
   transition: all 280ms ease;
   width: 100%;
   max-width: 320px;
@@ -318,7 +316,7 @@
 
 /* --- INTRO --- */
 .stay-intro {
-  background: var(--bg-white);
+  background: var(--bg-dark);
   border-bottom: 1px solid var(--border);
   text-align: center;
   overflow: hidden;
@@ -340,7 +338,7 @@
   background: linear-gradient(
     to bottom,
     transparent 0%,
-    rgba(249, 248, 246, 0.90) 100%
+    rgba(14, 14, 14, 0.92) 100%
   );
 }
 
@@ -373,7 +371,7 @@
 
 /* --- ROOMS --- */
 .stay-rooms {
-  background: var(--bg-white);
+  background: var(--bg-section);
   padding-bottom: 4rem;
   border-bottom: 1px solid var(--border);
 }
@@ -390,14 +388,13 @@
   padding: 0 1rem;
 }
 
-/* Card base */
 .room-card {
   position: relative;
   display: block;
   aspect-ratio: 3 / 4;
   overflow: hidden;
   text-decoration: none;
-  background-color: #1A1A1A;
+  background-color: var(--bg-card);
   background-image: var(--room-bg);
   background-size: cover;
   background-position: center;
@@ -415,7 +412,7 @@
     to bottom,
     rgba(10, 10, 10, 0.10) 0%,
     rgba(10, 10, 10, 0.30) 40%,
-    rgba(10, 10, 10, 0.82) 100%
+    rgba(10, 10, 10, 0.85) 100%
   );
   z-index: 1;
 }
@@ -450,7 +447,7 @@
 .room-card__price {
   font-family: var(--font-body);
   font-size: 0.625rem;
-  color: var(--accent-gold);
+  color: var(--accent-light);
   letter-spacing: 0.12em;
   font-weight: 600;
   display: flex;
@@ -478,7 +475,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(249, 248, 246, 0.93);
+  background: rgba(14, 14, 14, 0.92);
 }
 
 .stay-features__inner {
@@ -534,7 +531,7 @@
 
 /* --- STATISTICS --- */
 .stay-stats {
-  background: var(--bg-cream);
+  background: var(--bg-card);
   padding: 3rem 1.5rem;
   border-bottom: 1px solid var(--border);
 }
@@ -566,10 +563,9 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.6rem;
-  color: var(--text-primary);
+  color: var(--text-muted);
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  opacity: 0.75;
 }
 
 .stay-stats__line {
@@ -581,7 +577,7 @@
 
 /* --- BOOKING --- */
 .stay-booking {
-  background: var(--bg-white);
+  background: var(--bg-dark);
   padding: 4rem 1.5rem;
   text-align: center;
   border-bottom: 1px solid var(--border);
@@ -609,7 +605,7 @@
 
 .stay-input {
   width: 100%;
-  background: var(--bg-cream);
+  background: var(--bg-card);
   border: 1px solid var(--border);
   padding: 1rem 1.25rem;
   font-family: var(--font-body);
@@ -631,7 +627,7 @@
 
 .stay-select {
   width: 100%;
-  background: var(--bg-cream);
+  background: var(--bg-card);
   border: 1px solid var(--border);
   padding: 1rem 1.25rem;
   font-family: var(--font-body);
@@ -668,7 +664,7 @@
 
 /* --- FOOTER --- */
 .stay-footer {
-  background: var(--bg-cream);
+  background: var(--obsidian);
   border-top: 1px solid var(--border);
   padding: 2rem 1.25rem;
   text-align: center;
