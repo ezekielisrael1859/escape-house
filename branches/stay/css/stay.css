@@ -712,9 +712,9 @@
   .room-card__price { font-size: 0.75rem; }
 }
 /* --- ROOM CARD BACKGROUNDS --- */
-.room-card--classic   { background-image: url('../../assets/images/stay/classic.jpg'); }
-.room-card--deluxe    { background-image: url('../../assets/images/stay/deluxe.jpg'); }
-.room-card--executive { background-image: url('../../assets/images/stay/executive.jpg'); }
-.room-card--penthouse { background-image: url('../../assets/images/stay/penthouse.jpg'); }
-.room-card--family    { background-image: url('../../assets/images/stay/family.jpg'); }
-.room-card--couples   { background-image: url('../../assets/images/stay/couples.jpg'); }
+.room-card--classic   { background-image: url('../../../assets/images/stay/classic.jpg'); }
+.room-card--deluxe    { background-image: url('../../../assets/images/stay/deluxe.jpg'); }
+.room-card--executive { background-image: url('../../../assets/images/stay/executive.jpg'); }
+.room-card--penthouse { background-image: url('../../../assets/images/stay/penthouse.jpg'); }
+.room-card--family    { background-image: url('../../../assets/images/stay/family.jpg'); }
+.room-card--couples   { background-image: url('../../../assets/images/stay/couples.jpg'); }
