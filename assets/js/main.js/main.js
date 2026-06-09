@@ -44,3 +44,12 @@ if ('IntersectionObserver' in window) {
     observer.observe(el);
   });
 }
+// --- HAMBURGER MENU ---
+function toggleMenu() {
+  const drawer = document.getElementById('navDrawer');
+  const backdrop = document.getElementById('navBackdrop');
+  drawer.classList.toggle('is-open');
+  backdrop.classList.toggle('is-open');
+  document.body.style.overflow =
+    drawer.classList.contains('is-open') ? 'hidden' : '';
+}

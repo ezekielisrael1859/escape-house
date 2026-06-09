@@ -20,11 +20,46 @@
         <span class="nav__est">Est. 2022</span>
         <h1 class="nav__wordmark">Escape House</h1>
       </div>
-      <button class="nav__menu" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <button class="nav__menu" aria-label="Menu" onclick="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<!-- SLIDE MENU -->
+<div class="nav__drawer" id="navDrawer">
+  <button class="nav__drawer-close" onclick="toggleMenu()">✕</button>
+  <div class="nav__drawer-logo">
+    <span>Est. 2022</span>
+    <p>Escape House</p>
+  </div>
+  <nav class="nav__drawer-links">
+    <a href="/escape-house/branches/spa/" onclick="toggleMenu()">
+      <span class="nav__drawer-num">01</span>
+      Escape House Spa
+    </a>
+    <a href="/escape-house/branches/stay/" onclick="toggleMenu()">
+      <span class="nav__drawer-num">02</span>
+      Hotel Apartments
+    </a>
+    <a href="/escape-house/branches/dining/" onclick="toggleMenu()">
+      <span class="nav__drawer-num">03</span>
+      Escape Restaurant
+    </a>
+    <a href="/escape-house/branches/salon/" onclick="toggleMenu()">
+      <span class="nav__drawer-num">04</span>
+      Escape Salon
+    </a>
+  </nav>
+  <div class="nav__drawer-coded">
+    <a href="/escape-house/branches/coded/" onclick="toggleMenu()">
+      <span>By Invitation Only</span>
+      Coded Escape House
+    </a>
+  </div>
+  <p class="nav__drawer-copy">© 2026 Escape House Abuja</p>
+</div>
+<div class="nav__drawer-backdrop" id="navBackdrop" onclick="toggleMenu()"></div>
     </div>
   </header>
 
