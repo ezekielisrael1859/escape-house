@@ -1,9 +1,9 @@
 /* ============================================
-   ESCAPE HOUSE — MAIN JS V2
+   ESCAPE HOUSE — MAIN JS
    ============================================ */
 
 // --- HEADER SCROLL EFFECT ---
-const header = document.querySelector('.hub-header');
+const header = document.querySelector('.nav');
 
 if (header) {
   window.addEventListener('scroll', () => {
@@ -15,41 +15,33 @@ if (header) {
   }, { passive: true });
 }
 
-// --- HAMBURGER MENU TOGGLE ---
-const menuBtn = document.querySelector('.hub-header__menu');
-
-if (menuBtn) {
-  menuBtn.addEventListener('click', () => {
-    menuBtn.classList.toggle('is-open');
-  });
-}
-
-// --- SMOOTH REVEAL ON SCROLL ---
-const revealEls = document.querySelectorAll(
-  '.category-card, .hub-intro, .hub-quote, .section-header'
-);
-
-if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(el => {
-      if (el.isIntersecting) {
-        el.target.classList.add('is-visible');
-        observer.unobserve(el.target);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  revealEls.forEach(el => {
-    el.classList.add('will-reveal');
-    observer.observe(el);
-  });
-}
 // --- HAMBURGER MENU ---
-function toggleMenu() {
-  const drawer = document.getElementById('navDrawer');
-  const backdrop = document.getElementById('navBackdrop');
-  drawer.classList.toggle('is-open');
-  backdrop.classList.toggle('is-open');
-  document.body.style.overflow =
-    drawer.classList.contains('is-open') ? 'hidden' : '';
+const menuBtnEl = document.getElementById('menuBtn');
+const navDrawer = document.getElementById('navDrawer');
+const navBackdrop = document.getElementById('navBackdrop');
+
+if (menuBtnEl) {
+  menuBtnEl.addEventListener('click', function() {
+    navDrawer.classList.toggle('is-open');
+    navBackdrop.classList.toggle('is-open');
+    document.body.style.overflow =
+      navDrawer.classList.contains('is-open') ? 'hidden' : '';
+  });
+}
+
+const closeBtn = document.querySelector('.nav__drawer-close');
+if (closeBtn) {
+  closeBtn.addEventListener('click', function() {
+    navDrawer.classList.remove('is-open');
+    navBackdrop.classList.remove('is-open');
+    document.body.style.overflow = '';
+  });
+}
+
+if (navBackdrop) {
+  navBackdrop.addEventListener('click', function() {
+    navDrawer.classList.remove('is-open');
+    navBackdrop.classList.remove('is-open');
+    document.body.style.overflow = '';
+  });
 }
