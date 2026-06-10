@@ -24,39 +24,58 @@
   max-width: 480px;
   margin: 0 auto;
   width: 100%;
+  gap: 0.5rem;
 }
 
 .dining-nav__back {
   font-family: var(--font-body);
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   color: #C4783C;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   text-transform: uppercase;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .dining-nav__title {
   font-family: var(--font-heading);
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: #FFFFFF;
   letter-spacing: 0.10em;
   text-transform: uppercase;
   font-weight: 400;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 140px;
+  text-align: center;
+  flex: 1;
 }
 
 .dining-nav__book {
   font-family: var(--font-body);
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   color: #FFFFFF;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   text-transform: uppercase;
-  padding: 0.5rem 0.75rem;
+  padding: 0.4rem 0.6rem;
   border: 1px solid rgba(196, 120, 60, 0.50);
   white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.dining-nav__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0.4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.dining-nav__menu span {
+  display: block;
+  width: 18px;
+  height: 1.5px;
+  background: #FFFFFF;
 }
 
 /* --- HERO --- */
