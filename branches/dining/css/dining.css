@@ -37,11 +37,15 @@
 
 .dining-nav__title {
   font-family: var(--font-heading);
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: #FFFFFF;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   text-transform: uppercase;
   font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 140px;
 }
 
 .dining-nav__book {

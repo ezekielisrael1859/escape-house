@@ -14,18 +14,23 @@
 <body>
 
   <!-- NAVIGATION -->
-  <header class="salon-nav">
-    <div class="salon-nav__inner">
-      <a href="/escape-house/" class="salon-nav__back">← Escape House</a>
-      <h1 class="salon-nav__title">Salon & Grooming</h1>
-      <a href="#booking" class="salon-nav__book">Book Now</a>
-<button class="salon-nav__menu" id="menuBtn" aria-label="Menu">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
-    </div>
-  </header>
+<header class="salon-nav">
+  <div class="salon-nav__inner">
+    <!-- 1. Back Link -->
+    <a href="/escape-house/" class="salon-nav__back">← Escape House</a>
+    
+    <!-- 2. Title -->
+    <h1 class="salon-nav__title">Salon & Grooming</h1>
+    
+    <!-- 3. Menu Button -->
+    <button class="salon-nav__menu" id="menuBtn" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
 <!-- GLOBAL MENU -->
 <div class="global-drawer" id="navDrawer">
   <button class="global-drawer__close" id="closeBtn">✕</button>
@@ -38,6 +43,9 @@
       <span class="global-drawer__num">01</span>
       Escape House Spa
     </a>
+  </nav>
+</div>
+
     <a href="/escape-house/branches/stay/">
       <span class="global-drawer__num">02</span>
       Hotel Apartments
