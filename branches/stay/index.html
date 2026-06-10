@@ -19,9 +19,48 @@
       <a href="/escape-house/" class="stay-nav__back">← Escape House</a>
       <h1 class="stay-nav__title">Hotel Apartments</h1>
       <a href="#booking" class="stay-nav__book">Book Now</a>
+<button class="stay-nav__menu" id="menuBtn" aria-label="Menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
     </div>
   </header>
-
+<!-- GLOBAL MENU -->
+<div class="global-drawer" id="navDrawer">
+  <button class="global-drawer__close" id="closeBtn">✕</button>
+  <div class="global-drawer__logo">
+    <span>Est. 2022</span>
+    <p>Escape House</p>
+  </div>
+  <nav class="global-drawer__links">
+    <a href="/escape-house/branches/spa/">
+      <span class="global-drawer__num">01</span>
+      Escape House Spa
+    </a>
+    <a href="/escape-house/branches/stay/">
+      <span class="global-drawer__num">02</span>
+      Hotel Apartments
+    </a>
+    <a href="/escape-house/branches/dining/">
+      <span class="global-drawer__num">03</span>
+      Escape Restaurant
+    </a>
+    <a href="/escape-house/branches/salon/">
+      <span class="global-drawer__num">04</span>
+      Escape Salon
+    </a>
+  </nav>
+  <div class="global-drawer__coded">
+    <a href="/escape-house/branches/coded/">
+      <span>By Invitation Only</span>
+      <p>Coded Escape House</p>
+    </a>
+  </div>
+  <a href="/escape-house/" class="global-drawer__home">← Back to Escape House</a>
+  <p class="global-drawer__copy">© 2026 Escape House Abuja</p>
+</div>
+<div class="global-drawer__backdrop" id="navBackdrop"></div>
   <!-- HERO -->
   <section class="stay-hero">
     <div class="stay-hero__bg"></div>
@@ -236,6 +275,6 @@
       <p class="stay-footer__copy">© 2026 Escape House Abuja. All rights reserved.</p>
     </div>
   </footer>
-
+<script src="../../assets/js/menu.js"></script>
 </body>
 </html>
