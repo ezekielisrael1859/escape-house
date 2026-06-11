@@ -529,7 +529,7 @@
 .coded__bg {
   position: absolute;
   inset: 0;
-  background-image: url('assets/images/hub/coded-bg.jpg');
+  background-image: url('../images/hub/coded-bg.jpg');
   background-size: cover;
   background-position: center;
   z-index: 0;
