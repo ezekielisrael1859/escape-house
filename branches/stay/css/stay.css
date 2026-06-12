@@ -407,82 +407,83 @@
 .stay-rooms__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.625rem;
+  gap: 0.75rem;
   padding: 0 1rem;
 }
 
-.room-card {
+.stay-room-card {
   position: relative;
-  display: block;
   aspect-ratio: 3 / 4;
   overflow: hidden;
+  display: block;
+  border: 1px solid rgba(168, 180, 212, 0.15);
   text-decoration: none;
-  background-color: var(--bg-card);
-  background-image: var(--room-bg);
+  cursor: pointer;
+}
+
+.stay-room-card__bg {
+  position: absolute;
+  inset: 0;
   background-size: cover;
   background-position: center;
-  transition: transform 300ms ease;
+  transition: transform 500ms ease;
 }
 
-.room-card:active {
-  transform: scale(0.98);
+.stay-room-card:active .stay-room-card__bg {
+  transform: scale(1.04);
 }
 
-.room-card__overlay {
+.stay-room-card__overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    to bottom,
-    rgba(10, 10, 10, 0.10) 0%,
-    rgba(10, 10, 10, 0.30) 40%,
-    rgba(10, 10, 10, 0.85) 100%
+    to top,
+    rgba(5, 8, 18, 0.97) 0%,
+    rgba(5, 8, 18, 0.35) 55%,
+    rgba(5, 8, 18, 0.10) 100%
   );
-  z-index: 1;
 }
 
-.room-card__body {
+.stay-room-card__body {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+  padding: 1rem 0.75rem;
   z-index: 2;
-  padding: 1rem 0.875rem;
 }
 
-.room-card__title {
+.stay-room-card__num {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  color: #A8B4D4;
+  letter-spacing: 0.25em;
+  margin-bottom: 0.25rem;
+}
+
+.stay-room-card__title {
   font-family: var(--font-heading);
   font-size: 1rem;
-  font-weight: 400;
   color: #FFFFFF;
-  letter-spacing: 0.04em;
+  font-weight: 400;
   line-height: 1.2;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.25rem;
 }
 
-.room-card__desc {
-  font-family: var(--font-body);
-  font-size: 0.625rem;
-  color: rgba(255, 255, 255, 0.80);
-  line-height: 1.6;
-  margin-bottom: 0.6rem;
+.stay-room-card__desc {
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.70);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
 }
 
-.room-card__price {
+.stay-room-card__price {
   font-family: var(--font-body);
-  font-size: 0.625rem;
-  color: var(--accent-light);
-  letter-spacing: 0.12em;
+  font-size: 0.65rem;
+  color: #A8B4D4;
+  letter-spacing: 0.15em;
   font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.room-card__bar {
-  color: var(--accent-gold);
-  font-size: 0.75rem;
-  line-height: 1;
-  opacity: 0.7;
 }
 
 /* --- FEATURES --- */
