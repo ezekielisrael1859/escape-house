@@ -31,7 +31,7 @@
 .spa-nav__back {
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #7BA8A3;
+  color: #D4A590;
   letter-spacing: 0.10em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -123,7 +123,7 @@
 .spa-hero__eyebrow {
   font-family: var(--font-body);
   font-size: 0.7rem;
-  color: #7BA8A3;
+  color: #D4A590;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -148,7 +148,7 @@
 .spa-hero__sub {
   font-family: var(--font-body);
   font-size: 0.7rem;
-  color: #7BA8A3;
+  color: #D4A590;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -157,7 +157,7 @@
 .spa-hero__divider {
   width: 40px;
   height: 1px;
-  background: #7BA8A3;
+  background: #D4A590;
   margin: 1.5rem auto;
   opacity: 0.6;
 }
@@ -203,7 +203,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.6rem;
-  color: #7BA8A3;
+  color: #D4A590;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 0.25rem;
@@ -228,7 +228,7 @@
 /* --- BUTTONS --- */
 .btn-spa-gold {
   display: inline-block;
-  background: #7BA8A3;
+  background: #D4A590;
   color: #050C0E;
   font-family: var(--font-body);
   font-size: 0.7rem;
@@ -269,8 +269,8 @@
 }
 
 .btn-spa-ghost:active {
-  border-color: #7BA8A3;
-  color: #7BA8A3;
+  border-color: #D4A590;
+  color: #D4A590;
 }
 
 .btn-spa-whatsapp {
@@ -293,7 +293,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.7rem;
-  color: #7BA8A3;
+  color: #D4A590;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
@@ -302,7 +302,7 @@
 .spa-divider {
   width: 40px;
   height: 1px;
-  background: #7BA8A3;
+  background: #D4A590;
   margin: 1.5rem auto;
   opacity: 0.5;
 }
@@ -317,7 +317,7 @@
 }
 
 .spa-section-title em {
-  color: #7BA8A3;
+  color: #D4A590;
   font-style: italic;
 }
 
@@ -365,7 +365,7 @@
 }
 
 .spa-intro__title em {
-  color: #7BA8A3;
+  color: #D4A590;
   font-style: italic;
 }
 
@@ -442,7 +442,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #7BA8A3;
+  color: #D4A590;
   letter-spacing: 0.25em;
   margin-bottom: 0.25rem;
 }
@@ -466,7 +466,7 @@
 .spa-service-card__price {
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #7BA8A3;
+  color: #D4A590;
   letter-spacing: 0.15em;
   font-weight: 600;
 }
@@ -518,7 +518,7 @@
 
 .spa-feature__icon {
   font-size: 1.25rem;
-  color: #7BA8A3;
+  color: #D4A590;
   flex-shrink: 0;
   margin-top: 0.25rem;
 }
@@ -564,7 +564,7 @@
   display: block;
   font-family: var(--font-heading);
   font-size: 3rem;
-  color: #7BA8A3;
+  color: #D4A590;
   line-height: 1;
   margin-bottom: 0.5rem;
 }
@@ -634,7 +634,7 @@
 }
 
 .spa-input:focus {
-  border-color: #7BA8A3;
+  border-color: #D4A590;
 }
 
 .spa-select {
@@ -691,7 +691,7 @@
 .spa-footer__back {
   font-family: var(--font-body);
   font-size: 0.7rem;
-  color: #7BA8A3;
+  color: #D4A590;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
@@ -699,7 +699,7 @@
 .spa-footer__divider {
   width: 40px;
   height: 1px;
-  background: #7BA8A3;
+  background: #D4A590;
   margin: 1rem auto;
   opacity: 0.25;
 }
