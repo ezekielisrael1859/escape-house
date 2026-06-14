@@ -377,48 +377,70 @@
 }
 
 .coded-exp-card {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
   display: block;
-  background: #101010;
-  border: 1px solid rgba(210, 210, 210, 0.08);
-  border-bottom: 2px solid rgba(210, 210, 210, 0.40);
-  padding: 1.5rem 1rem;
-  text-align: center;
+  border: 1px solid rgba(210, 210, 210, 0.12);
   text-decoration: none;
   cursor: pointer;
-  transition: border-color 280ms ease;
 }
 
-.coded-exp-card:active {
-  border-color: silver;
+.coded-exp-card__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 500ms ease;
 }
 
-.coded-exp-card__top {
-  margin-bottom: 0.75rem;
+.coded-exp-card:active .coded-exp-card__bg {
+  transform: scale(1.04);
 }
 
-.coded-exp-card__icon {
-  font-size: 1.5rem;
-  color: silver;
+.coded-exp-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(8, 8, 8, 0.97) 0%,
+    rgba(8, 8, 8, 0.35) 55%,
+    rgba(8, 8, 8, 0.10) 100%
+  );
+}
+
+.coded-exp-card__body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 0.75rem;
+  z-index: 2;
+}
+
+.coded-exp-card__num {
   display: block;
-  margin-bottom: 0.5rem;
-  line-height: 1;
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  color: silver;
+  letter-spacing: 0.25em;
+  margin-bottom: 0.25rem;
 }
 
 .coded-exp-card__title {
   font-family: var(--font-heading);
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #FFFFFF;
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
 }
 
 .coded-exp-card__desc {
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  color: #E8E8E8;
-  line-height: 1.7;
-  margin-bottom: 1rem;
-  opacity: 0.70;
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.70);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
 }
 
 .coded-exp-card__tag {
@@ -428,7 +450,7 @@
   letter-spacing: 0.15em;
   font-weight: 600;
   text-transform: uppercase;
-  opacity: 0.80;
+  opacity: 0.85;
 }
 
 /* --- FEATURES --- */
