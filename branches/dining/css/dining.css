@@ -31,7 +31,7 @@
 .dining-nav__back {
   font-family: var(--font-body);
   font-size: 0.6rem;
-  color: #C4783C;
+  color:  #E08A4A;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -126,7 +126,7 @@
 .dining-hero__eyebrow {
   font-family: var(--font-body);
   font-size: 0.7rem;
-  color: #C4783C;
+  color:  #E08A4A;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -151,7 +151,7 @@
 .dining-hero__sub {
   font-family: var(--font-body);
   font-size: 0.7rem;
-  color: #C4783C;
+  color:  #E08A4A;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -160,7 +160,7 @@
 .dining-hero__divider {
   width: 40px;
   height: 1px;
-  background: #C4783C;
+  background:  #E08A4A;
   margin: 1.5rem auto;
   opacity: 0.6;
 }
@@ -206,7 +206,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.6rem;
-  color: #C4783C;
+  color:  #E08A4A;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 0.25rem;
@@ -231,7 +231,7 @@
 /* --- BUTTONS --- */
 .btn-dining-primary {
   display: inline-block;
-  background: #C4783C;
+  background:  #E08A4A;
   color: #0E0508;
   font-family: var(--font-body);
   font-size: 0.7rem;
@@ -272,8 +272,8 @@
 }
 
 .btn-dining-ghost:active {
-  border-color: #C4783C;
-  color: #C4783C;
+  border-color:  #E08A4A;
+  color:  #E08A4A;
 }
 
 .btn-dining-whatsapp {
@@ -296,7 +296,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.7rem;
-  color: #C4783C;
+  color:  #E08A4A;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
@@ -305,7 +305,7 @@
 .dining-divider {
   width: 40px;
   height: 1px;
-  background: #C4783C;
+  background:  #E08A4A;
   margin: 1.5rem auto;
   opacity: 0.5;
 }
@@ -320,7 +320,7 @@
 }
 
 .dining-section-title em {
-  color: #C4783C;
+  color:  #E08A4A;
   font-style: italic;
 }
 
@@ -368,7 +368,7 @@
 }
 
 .dining-intro__title em {
-  color: #C4783C;
+  color:  #E08A4A;
   font-style: italic;
 }
 
@@ -445,7 +445,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #C4783C;
+  color:  #E08A4A;
   letter-spacing: 0.25em;
   margin-bottom: 0.25rem;
 }
@@ -469,7 +469,7 @@
 .dining-menu-card__tag {
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #C4783C;
+  color:  #E08A4A;
   letter-spacing: 0.15em;
   font-weight: 600;
   text-transform: uppercase;
@@ -522,7 +522,7 @@
 
 .dining-feature__icon {
   font-size: 1.25rem;
-  color: #C4783C;
+  color:  #E08A4A;
   flex-shrink: 0;
   margin-top: 0.25rem;
 }
@@ -568,7 +568,7 @@
   display: block;
   font-family: var(--font-heading);
   font-size: 3rem;
-  color: #C4783C;
+  color:  #E08A4A;
   line-height: 1;
   margin-bottom: 0.5rem;
 }
@@ -638,7 +638,7 @@
 }
 
 .dining-input:focus {
-  border-color: #C4783C;
+  border-color:  #E08A4A;
 }
 
 .dining-select {
@@ -695,7 +695,7 @@
 .dining-footer__back {
   font-family: var(--font-body);
   font-size: 0.7rem;
-  color: #C4783C;
+  color:  #E08A4A;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
@@ -703,7 +703,7 @@
 .dining-footer__divider {
   width: 40px;
   height: 1px;
-  background: #C4783C;
+  background:  #E08A4A;
   margin: 1rem auto;
   opacity: 0.25;
 }

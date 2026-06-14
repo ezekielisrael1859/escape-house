@@ -42,7 +42,7 @@
 .stay-nav__back {
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #A8B4D4;
+  color:  #C5D3F0;
   letter-spacing: 0.10em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -457,7 +457,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #A8B4D4;
+  color:  #C5D3F0;
   letter-spacing: 0.25em;
   margin-bottom: 0.25rem;
 }
@@ -481,7 +481,7 @@
 .stay-room-card__price {
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #A8B4D4;
+  color:  #C5D3F0;
   letter-spacing: 0.15em;
   font-weight: 600;
 }
