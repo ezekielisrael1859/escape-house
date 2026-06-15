@@ -1,7 +1,7 @@
 /* ============================================
    ESCAPE HOUSE SPA — BRANCH CSS
-   Personality: Botanical Luxury (Distinct from Main)
-   Palette: Obsidian + Muted Sage + Pearl
+   Personality: Mineral Serenity (Absolute Best)
+   Palette: Obsidian Blue + Mineral Slate + Frosted Silver
    ============================================ */
 
 /* --- NAVIGATION --- */
@@ -12,10 +12,10 @@
   right: 0;
   z-index: 100;
   padding: 1rem 1.25rem;
-  background: rgba(10, 15, 13, 0.98); /* Deep botanical tint */
+  background: rgba(8, 10, 12, 0.98); 
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(141, 163, 153, 0.20); /* Sage border */
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15); /* Slate border */
 }
 
 .spa-nav__inner {
@@ -31,7 +31,7 @@
 .spa-nav__back {
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #8DA399; /* Muted Sage */
+  color: #94A3B8; /* Mineral Slate */
   letter-spacing: 0.10em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -56,7 +56,7 @@
   letter-spacing: 0.10em;
   text-transform: uppercase;
   padding: 0.4rem 0.6rem;
-  border: 1px solid rgba(141, 163, 153, 0.50);
+  border: 1px solid rgba(148, 163, 184, 0.40);
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -104,9 +104,9 @@
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(10, 15, 13, 0.60) 0%,
-    rgba(10, 15, 13, 0.40) 40%,
-    rgba(10, 15, 13, 0.92) 100%
+    rgba(8, 10, 12, 0.50) 0%,
+    rgba(8, 10, 12, 0.40) 40%,
+    rgba(8, 10, 12, 0.94) 100%
   );
   z-index: 1;
 }
@@ -123,7 +123,7 @@
 .spa-hero__eyebrow {
   font-family: var(--font-body);
   font-size: 0.7rem;
-  color: #8DA399; /* Muted Sage */
+  color: #94A3B8; /* Slate */
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -148,7 +148,7 @@
 .spa-hero__sub {
   font-family: var(--font-body);
   font-size: 0.7rem;
-  color: #8DA399;
+  color: #94A3B8;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -157,7 +157,7 @@
 .spa-hero__divider {
   width: 40px;
   height: 1px;
-  background: #8DA399;
+  background: #94A3B8;
   margin: 1.5rem auto;
   opacity: 0.6;
 }
@@ -166,7 +166,7 @@
   font-family: var(--font-script);
   font-style: italic;
   font-size: 1rem;
-  color: #D1D5D2; /* Pearl Silver */
+  color: #E2E8F0; /* Frosted Silver */
   line-height: 1.8;
   margin-bottom: 2rem;
   opacity: 0.90;
@@ -184,9 +184,9 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  background: rgba(10, 15, 13, 0.95);
+  background: rgba(8, 10, 12, 0.96);
   backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(141, 163, 153, 0.25);
+  border-top: 1px solid rgba(148, 163, 184, 0.20);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,7 +203,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.6rem;
-  color: #8DA399;
+  color: #94A3B8;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 0.25rem;
@@ -213,7 +213,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #E8EBE9;
+  color: #F1F5F9;
   letter-spacing: 0.10em;
   font-weight: 500;
 }
@@ -221,15 +221,15 @@
 .spa-hero__info-divider {
   width: 1px;
   height: 28px;
-  background: rgba(141, 163, 153, 0.25);
+  background: rgba(148, 163, 184, 0.20);
   flex-shrink: 0;
 }
 
 /* --- BUTTONS --- */
 .btn-spa-gold {
   display: inline-block;
-  background: #8DA399; /* Muted Sage */
-  color: #0A0F0D; /* Dark Obsidian */
+  background: #94A3B8; /* Mineral Slate */
+  color: #080A0C; /* Deep Obsidian */
   font-family: var(--font-body);
   font-size: 0.7rem;
   font-weight: 600;
@@ -246,7 +246,7 @@
 }
 
 .btn-spa-gold:active {
-  background: #6D8278;
+  background: #64748B;
   transform: scale(0.98);
 }
 
@@ -262,15 +262,15 @@
   padding: 1rem 2.5rem;
   min-width: 220px;
   text-align: center;
-  border: 1px solid rgba(141, 163, 153, 0.4);
+  border: 1px solid rgba(148, 163, 184, 0.35);
   transition: all 280ms ease;
   width: 100%;
   max-width: 320px;
 }
 
 .btn-spa-ghost:active {
-  border-color: #8DA399;
-  color: #8DA399;
+  border-color: #94A3B8;
+  color: #94A3B8;
 }
 
 .btn-spa-whatsapp {
@@ -293,7 +293,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.7rem;
-  color: #8DA399;
+  color: #94A3B8;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
@@ -302,7 +302,7 @@
 .spa-divider {
   width: 40px;
   height: 1px;
-  background: #8DA399;
+  background: #94A3B8;
   margin: 1.5rem auto;
   opacity: 0.5;
 }
@@ -317,14 +317,14 @@
 }
 
 .spa-section-title em {
-  color: #8DA399;
+  color: #94A3B8;
   font-style: italic;
 }
 
 /* --- INTRO --- */
 .spa-intro {
-  background: #0A0F0D;
-  border-bottom: 1px solid rgba(141, 163, 153, 0.12);
+  background: #080A0C;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.10);
   text-align: center;
   overflow: hidden;
 }
@@ -345,7 +345,7 @@
   background: linear-gradient(
     to bottom,
     transparent 0%,
-    rgba(10, 15, 13, 0.95) 100%
+    rgba(8, 10, 12, 0.96) 100%
   );
 }
 
@@ -365,23 +365,23 @@
 }
 
 .spa-intro__title em {
-  color: #8DA399;
+  color: #94A3B8;
   font-style: italic;
 }
 
 .spa-intro__text {
   font-family: var(--font-body);
   font-size: 0.875rem;
-  color: #D1D5D2; /* Pearl Pearl */
+  color: #CBD5E1; /* Muted Frosted Silver */
   line-height: 1.9;
   opacity: 0.85;
 }
 
 /* --- SERVICES --- */
 .spa-services {
-  background: #0A0F0D;
+  background: #080A0C;
   padding-bottom: 4rem;
-  border-bottom: 1px solid rgba(141, 163, 153, 0.12);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.10);
 }
 
 .spa-services__header {
@@ -401,7 +401,7 @@
   aspect-ratio: 3 / 4;
   overflow: hidden;
   display: block;
-  border: 1px solid rgba(141, 163, 153, 0.15);
+  border: 1px solid rgba(148, 163, 184, 0.12);
   text-decoration: none;
   cursor: pointer;
 }
@@ -423,9 +423,9 @@
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(10, 15, 13, 0.97) 0%,
-    rgba(10, 15, 13, 0.35) 55%,
-    rgba(10, 15, 13, 0.10) 100%
+    rgba(8, 10, 12, 0.98) 0%,
+    rgba(8, 10, 12, 0.35) 55%,
+    rgba(8, 10, 12, 0.10) 100%
   );
 }
 
@@ -442,7 +442,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #8DA399;
+  color: #94A3B8;
   letter-spacing: 0.25em;
   margin-bottom: 0.25rem;
 }
@@ -458,7 +458,7 @@
 
 .spa-service-card__desc {
   font-size: 0.65rem;
-  color: rgba(209, 213, 210, 0.70);
+  color: rgba(203, 213, 225, 0.70);
   line-height: 1.5;
   margin-bottom: 0.5rem;
 }
@@ -466,7 +466,7 @@
 .spa-service-card__price {
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #8DA399;
+  color: #94A3B8;
   letter-spacing: 0.15em;
   font-weight: 600;
 }
@@ -477,14 +477,14 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  border-bottom: 1px solid rgba(141, 163, 153, 0.12);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.10);
 }
 
 .spa-features::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(10, 15, 13, 0.95);
+  background: rgba(8, 10, 12, 0.96);
 }
 
 .spa-features__inner {
@@ -508,7 +508,7 @@
   gap: 1.25rem;
   align-items: flex-start;
   padding: 1.5rem 0;
-  border-bottom: 1px solid rgba(141, 163, 153, 0.10);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.10);
   text-align: left;
 }
 
@@ -518,7 +518,7 @@
 
 .spa-feature__icon {
   font-size: 1.25rem;
-  color: #8DA399;
+  color: #94A3B8;
   flex-shrink: 0;
   margin-top: 0.25rem;
 }
@@ -534,16 +534,16 @@
 .spa-feature__desc {
   font-family: var(--font-body);
   font-size: 0.875rem;
-  color: #D1D5D2;
+  color: #CBD5E1;
   line-height: 1.8;
   opacity: 0.80;
 }
 
 /* --- STATISTICS --- */
 .spa-stats {
-  background: #111815;
+  background: #0F172A; /* Slight blue tint for stats */
   padding: 3rem 1.5rem;
-  border-bottom: 1px solid rgba(141, 163, 153, 0.12);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.10);
 }
 
 .spa-stats__inner {
@@ -564,7 +564,7 @@
   display: block;
   font-family: var(--font-heading);
   font-size: 3rem;
-  color: #8DA399;
+  color: #94A3B8;
   line-height: 1;
   margin-bottom: 0.5rem;
 }
@@ -573,7 +573,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.6rem;
-  color: #E8EBE9;
+  color: #F1F5F9;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   opacity: 0.75;
@@ -582,16 +582,16 @@
 .spa-stats__line {
   width: 1px;
   height: 50px;
-  background: rgba(141, 163, 153, 0.25);
+  background: rgba(148, 163, 184, 0.20);
   flex-shrink: 0;
 }
 
 /* --- BOOKING --- */
 .spa-booking {
-  background: #0A0F0D;
+  background: #080A0C;
   padding: 4rem 1.5rem;
   text-align: center;
-  border-bottom: 1px solid rgba(141, 163, 153, 0.12);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.10);
 }
 
 .spa-booking__inner {
@@ -602,7 +602,7 @@
 .spa-booking__sub {
   font-family: var(--font-body);
   font-size: 0.875rem;
-  color: #D1D5D2;
+  color: #CBD5E1;
   line-height: 1.8;
   margin-bottom: 2rem;
   opacity: 0.85;
@@ -617,8 +617,8 @@
 
 .spa-input {
   width: 100%;
-  background: #111815;
-  border: 1px solid rgba(141, 163, 153, 0.20);
+  background: #0F172A;
+  border: 1px solid rgba(148, 163, 184, 0.15);
   padding: 1rem 1.25rem;
   font-family: var(--font-body);
   font-size: 0.875rem;
@@ -634,13 +634,13 @@
 }
 
 .spa-input:focus {
-  border-color: #8DA399;
+  border-color: #94A3B8;
 }
 
 .spa-select {
   width: 100%;
-  background: #111815;
-  border: 1px solid rgba(141, 163, 153, 0.20);
+  background: #0F172A;
+  border: 1px solid rgba(148, 163, 184, 0.15);
   padding: 1rem 1.25rem;
   font-family: var(--font-body);
   font-size: 0.875rem;
@@ -655,25 +655,10 @@
   resize: none;
 }
 
-.spa-booking__contact {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(141, 163, 153, 0.15);
-}
-
-.spa-booking__note {
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  color: #D1D5D2;
-  letter-spacing: 0.10em;
-  margin-bottom: 1rem;
-  opacity: 0.70;
-}
-
 /* --- FOOTER --- */
 .spa-footer {
-  background: #0A0F0D;
-  border-top: 1px solid rgba(141, 163, 153, 0.15);
+  background: #080A0C;
+  border-top: 1px solid rgba(148, 163, 184, 0.15);
   padding: 2rem 1.25rem;
   text-align: center;
 }
@@ -686,7 +671,7 @@
 .spa-footer__back {
   font-family: var(--font-body);
   font-size: 0.7rem;
-  color: #8DA399;
+  color: #94A3B8;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
@@ -694,7 +679,7 @@
 .spa-footer__divider {
   width: 40px;
   height: 1px;
-  background: #8DA399;
+  background: #94A3B8;
   margin: 1rem auto;
   opacity: 0.25;
 }
