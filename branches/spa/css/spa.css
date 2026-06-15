@@ -1,7 +1,7 @@
 /* ============================================
    ESCAPE HOUSE SPA — BRANCH CSS
-   Personality: Midnight Zen (Fixed - Dark Luxury)
-   Palette: Obsidian + Warm Terracotta + Soft Clay
+   Personality: Mineral Botanical (Distinct from Main)
+   Palette: Deep Moss Graphite + Muted Sage + Satin Gold
    ============================================ */
 
 /* --- NAVIGATION --- */
@@ -12,10 +12,10 @@
   right: 0;
   z-index: 100;
   padding: 1rem 1.25rem;
-  background: rgba(8, 10, 12, 0.98); /* Deep Obsidian */
+  background: rgba(22, 27, 24, 0.98); /* Deep Moss Graphite - Not Black */
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(212, 163, 115, 0.15); /* Terracotta border */
+  border-bottom: 1px solid rgba(186, 141, 87, 0.15); /* Satin Gold border */
 }
 
 .spa-nav__inner {
@@ -31,7 +31,7 @@
 .spa-nav__back {
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #A3A3A3; 
+  color: #7A8D80; /* Muted Sage */
   letter-spacing: 0.10em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -52,23 +52,12 @@
 .spa-nav__book {
   font-family: var(--font-body);
   font-size: 0.6rem;
-  color: #D4A373; /* Warm Terracotta */
+  color: #BA8D57; /* Satin Gold */
   letter-spacing: 0.10em;
   text-transform: uppercase;
   padding: 0.4rem 0.6rem;
-  border: 1px solid rgba(212, 163, 115, 0.40);
+  border: 1px solid rgba(186, 141, 87, 0.40);
   white-space: nowrap;
-  flex-shrink: 0;
-}
-
-.spa-nav__menu {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 0.4rem;
-  background: none;
-  border: none;
-  cursor: pointer;
   flex-shrink: 0;
 }
 
@@ -76,20 +65,10 @@
   display: block;
   width: 18px;
   height: 1.5px;
-  background: #FFFFFF;
+  background: #7A8D80; /* Sage Green */
 }
 
 /* --- HERO --- */
-.spa-hero {
-  min-height: 100svh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
 .spa-hero__bg {
   position: absolute;
   inset: 0;
@@ -104,497 +83,166 @@
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(8, 10, 12, 0.50) 0%,
-    rgba(8, 10, 12, 0.60) 40%,
-    rgba(8, 10, 12, 0.96) 100%
+    rgba(22, 27, 24, 0.50) 0%, /* Moss Graphite Tint */
+    rgba(22, 27, 24, 0.60) 40%,
+    rgba(22, 27, 24, 0.94) 100%
   );
   z-index: 1;
 }
 
-.spa-hero__content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  padding: 5rem 1.5rem 3rem;
-  width: 100%;
-  max-width: 480px;
-}
-
 .spa-hero__eyebrow {
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  color: #D4A373; /* Terracotta */
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-}
-
-.spa-hero__title {
-  font-family: var(--font-heading);
-  font-size: 5.5rem;
-  color: #FFFFFF;
-  font-weight: 300;
-  letter-spacing: 0.08em;
-  line-height: 0.95;
-  margin-bottom: 1rem;
-}
-
-.spa-hero__title em {
-  color: #FFFFFF;
-  font-style: normal;
-  display: block;
-}
-
-.spa-hero__sub {
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  color: #A3A3A3;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  color: #BA8D57; /* Satin Gold */
 }
 
 .spa-hero__divider {
-  width: 40px;
-  height: 1px;
-  background: #D4A373;
-  margin: 1.5rem auto;
-  opacity: 0.6;
+  background: #BA8D57;
 }
 
 .spa-hero__tagline {
-  font-family: var(--font-script);
-  font-style: italic;
-  font-size: 1rem;
-  color: #E5E5E5;
-  line-height: 1.8;
-  margin-bottom: 2rem;
-  opacity: 0.90;
-}
-
-.spa-hero__buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
+  color: #EAE7E1; /* Warm Parchment instead of stark white */
 }
 
 /* --- HERO INFOBAR --- */
 .spa-hero__infobar {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  background: rgba(8, 10, 12, 0.98);
-  backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(212, 163, 115, 0.20);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 1.25rem;
-  gap: 1rem;
-}
-
-.spa-hero__info {
-  text-align: center;
-  flex: 1;
+  background: rgba(22, 27, 24, 0.98);
+  border-top: 1px solid rgba(122, 141, 128, 0.20);
 }
 
 .spa-hero__info-label {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 0.6rem;
-  color: #A3A3A3;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  margin-bottom: 0.25rem;
-}
-
-.spa-hero__info-value {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 0.65rem;
-  color: #FFFFFF;
-  letter-spacing: 0.10em;
-  font-weight: 500;
+  color: #7A8D80; /* Sage */
 }
 
 .spa-hero__info-divider {
-  width: 1px;
-  height: 28px;
-  background: rgba(212, 163, 115, 0.15);
-  flex-shrink: 0;
+  background: rgba(122, 141, 128, 0.20);
 }
 
 /* --- BUTTONS --- */
 .btn-spa-gold {
-  display: inline-block;
-  background: #D4A373; /* Warm Terracotta */
-  color: #080A0C;
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  padding: 1rem 2.5rem;
-  min-width: 220px;
-  text-align: center;
-  transition: all 280ms ease;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  max-width: 320px;
-}
-
-.btn-spa-gold:active {
-  background: #B88A5A;
-  transform: scale(0.98);
+  background: #BA8D57; /* Satin Gold */
+  color: #161B18; /* Deep Moss text */
 }
 
 .btn-spa-ghost {
-  display: inline-block;
-  background: transparent;
   color: #FFFFFF;
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  padding: 1rem 2.5rem;
-  min-width: 220px;
-  text-align: center;
-  border: 1px solid rgba(212, 163, 115, 0.4);
-  transition: all 280ms ease;
-  width: 100%;
-  max-width: 320px;
-}
-
-.btn-spa-ghost:active {
-  border-color: #D4A373;
-}
-
-.btn-spa-whatsapp {
-  display: inline-block;
-  background: #25D366;
-  color: #FFFFFF;
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  padding: 1rem 2rem;
-  min-width: 200px;
-  text-align: center;
-  transition: all 280ms ease;
+  border: 1px solid rgba(186, 141, 87, 0.4);
 }
 
 /* --- SHARED STYLES --- */
 .spa-label {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  color: #D4A373;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  margin-bottom: 0.75rem;
-}
-
-.spa-divider {
-  width: 40px;
-  height: 1px;
-  background: #D4A373;
-  margin: 1.5rem auto;
-  opacity: 0.5;
-}
-
-.spa-section-title {
-  font-family: var(--font-heading);
-  font-size: 3rem;
-  color: #FFFFFF;
-  font-weight: 300;
-  line-height: 1.1;
-  margin-bottom: 0.75rem;
+  color: #7A8D80; /* Sage */
 }
 
 .spa-section-title em {
-  color: #D4A373;
-  font-style: italic;
+  color: #BA8D57; /* Gold accent */
 }
 
 /* --- INTRO --- */
 .spa-intro {
-  background: #080A0C;
-  border-bottom: 1px solid rgba(212, 163, 115, 0.10);
-  text-align: center;
-  overflow: hidden;
-}
-
-.spa-intro__img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background-image: url('../../../assets/images/spa/spa-intro.jpg');
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  background: #161B18; /* Deep Moss Graphite */
+  border-bottom: 1px solid rgba(122, 141, 128, 0.10);
 }
 
 .spa-intro__img::after {
-  content: '';
-  position: absolute;
-  inset: 0;
   background: linear-gradient(
     to bottom,
     transparent 0%,
-    rgba(8, 10, 12, 0.96) 100%
+    rgba(22, 27, 24, 0.96) 100%
   );
 }
 
-.spa-intro__inner {
-  max-width: 420px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem 4rem;
-}
-
-.spa-intro__title {
-  font-family: var(--font-heading);
-  font-size: 2.5rem;
-  color: #FFFFFF;
-  font-weight: 300;
-  line-height: 1.1;
-  margin-bottom: 0.75rem;
-}
-
-.spa-intro__title em {
-  color: #D4A373;
-  font-style: italic;
-}
-
 .spa-intro__text {
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  color: #A3A3A3;
-  line-height: 1.9;
-  opacity: 0.85;
+  color: #B2BCB5; /* Ash Sage Green */
 }
 
 /* --- SERVICES --- */
 .spa-services {
-  background: #080A0C;
-  padding-bottom: 4rem;
-  border-bottom: 1px solid rgba(212, 163, 115, 0.10);
-}
-
-.spa-services__header {
-  text-align: center;
-  padding: 4rem 1.25rem 2rem;
-}
-
-.spa-services__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
-  padding: 0 1rem;
+  background: #161B18;
 }
 
 .spa-service-card {
-  position: relative;
-  aspect-ratio: 3 / 4;
-  overflow: hidden;
-  display: block;
-  border: 1px solid rgba(212, 163, 115, 0.15);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.spa-service-card__bg {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  transition: transform 500ms ease;
+  border: 1px solid rgba(122, 141, 128, 0.15);
 }
 
 .spa-service-card__overlay {
-  position: absolute;
-  inset: 0;
   background: linear-gradient(
     to top,
-    rgba(8, 10, 12, 0.98) 0%,
-    rgba(8, 10, 12, 0.40) 55%,
-    rgba(8, 10, 12, 0.10) 100%
+    rgba(22, 27, 24, 0.98) 0%,
+    rgba(22, 27, 24, 0.40) 55%,
+    rgba(22, 27, 24, 0.10) 100%
   );
 }
 
-.spa-service-card__body {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1rem 0.75rem;
-  z-index: 2;
-}
-
 .spa-service-card__num {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 0.65rem;
-  color: #D4A373;
-  letter-spacing: 0.25em;
-  margin-bottom: 0.25rem;
-}
-
-.spa-service-card__title {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  color: #FFFFFF;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 0.25rem;
+  color: #BA8D57;
 }
 
 .spa-service-card__desc {
-  font-size: 0.65rem;
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
+  color: #B2BCB5;
 }
 
 .spa-service-card__price {
-  font-family: var(--font-body);
-  font-size: 0.65rem;
-  color: #D4A373;
-  letter-spacing: 0.15em;
-  font-weight: 600;
+  color: #BA8D57;
 }
 
 /* --- FEATURES --- */
-.spa-features {
-  background-image: url('../../../assets/images/spa/spa-features.jpg');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  border-bottom: 1px solid rgba(212, 163, 115, 0.10);
-}
-
 .spa-features::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(8, 10, 12, 0.96);
-}
-
-.spa-features__inner {
-  position: relative;
-  z-index: 1;
-  padding: 4rem 1.5rem;
-  text-align: center;
-  max-width: 480px;
-  margin: 0 auto;
+  background: rgba(22, 27, 24, 0.96);
 }
 
 .spa-feature {
-  display: flex;
-  gap: 1.25rem;
-  align-items: flex-start;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid rgba(212, 163, 115, 0.15);
-  text-align: left;
+  border-bottom: 1px solid rgba(122, 141, 128, 0.15);
 }
 
 .spa-feature__icon {
-  font-size: 1.25rem;
-  color: #D4A373;
-  flex-shrink: 0;
-  margin-top: 0.25rem;
-}
-
-.spa-feature__title {
-  font-family: var(--font-heading);
-  font-size: 1.375rem;
-  color: #FFFFFF;
-  font-weight: 400;
-  margin-bottom: 0.5rem;
+  color: #BA8D57;
 }
 
 .spa-feature__desc {
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  color: #A3A3A3;
-  line-height: 1.8;
+  color: #B2BCB5;
 }
 
 /* --- STATISTICS --- */
 .spa-stats {
-  background: #080A0C;
-  padding: 3rem 1.5rem;
-  border-bottom: 1px solid rgba(212, 163, 115, 0.10);
+  background: #1B231F; /* Slightly lighter Moss for texture break */
 }
 
 .spa-stat__num {
-  display: block;
-  font-family: var(--font-heading);
-  font-size: 3rem;
-  color: #D4A373;
-  line-height: 1;
-  margin-bottom: 0.5rem;
+  color: #BA8D57;
 }
 
 .spa-stat__label {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 0.6rem;
-  color: #FFFFFF;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  opacity: 0.75;
+  color: #7A8D80;
 }
 
 .spa-stats__line {
-  width: 1px;
-  height: 50px;
-  background: rgba(212, 163, 115, 0.15);
-  flex-shrink: 0;
+  background: rgba(122, 141, 128, 0.20);
 }
 
 /* --- BOOKING --- */
 .spa-booking {
-  background: #080A0C;
-  padding: 4rem 1.5rem;
-  text-align: center;
+  background: #161B18;
 }
 
 .spa-input, .spa-select {
-  width: 100%;
-  background: #121212;
-  border: 1px solid rgba(212, 163, 115, 0.2);
-  padding: 1rem 1.25rem;
-  font-family: var(--font-body);
-  font-size: 0.875rem;
+  background: #1B231F;
+  border: 1px solid rgba(122, 141, 128, 0.2);
   color: #FFFFFF;
-  outline: none;
 }
 
 .spa-input:focus {
-  border-color: #D4A373;
+  border-color: #BA8D57;
 }
 
 /* --- FOOTER --- */
 .spa-footer {
-  background: #080A0C;
-  border-top: 1px solid rgba(212, 163, 115, 0.15);
-  padding: 2rem 1.25rem;
-  text-align: center;
+  background: #161B18;
+  border-top: 1px solid rgba(186, 141, 87, 0.15);
 }
 
 .spa-footer__back {
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  color: #D4A373;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  color: #7A8D80;
 }
 
 .spa-footer__copy {
-  font-family: var(--font-body);
-  font-size: 0.65rem;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(178, 188, 181, 0.3);
 }
