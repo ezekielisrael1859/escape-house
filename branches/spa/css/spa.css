@@ -1,7 +1,7 @@
 /* ============================================
    ESCAPE HOUSE SPA — BRANCH CSS
-   Personality: Mineral Serenity (Absolute Best)
-   Palette: Obsidian Blue + Mineral Slate + Frosted Silver
+   Personality: Ethereal Sanctuary (Bright & Airy)
+   Palette: Alabaster Cream + Eucalyptus + Soft Gold
    ============================================ */
 
 /* --- NAVIGATION --- */
@@ -12,10 +12,10 @@
   right: 0;
   z-index: 100;
   padding: 1rem 1.25rem;
-  background: rgba(8, 10, 12, 0.98); 
+  background: rgba(247, 245, 242, 0.98); /* Alabaster Cream */
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(148, 163, 184, 0.15); /* Slate border */
+  border-bottom: 1px solid rgba(95, 111, 101, 0.15); /* Eucalyptus border */
 }
 
 .spa-nav__inner {
@@ -31,7 +31,7 @@
 .spa-nav__back {
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #94A3B8; /* Mineral Slate */
+  color: #5F6F65; /* Eucalyptus */
   letter-spacing: 0.10em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -41,7 +41,7 @@
 .spa-nav__title {
   font-family: var(--font-heading);
   font-size: 0.75rem;
-  color: #FFFFFF;
+  color: #2D3436; /* Charcoal Gray */
   letter-spacing: 0.10em;
   text-transform: uppercase;
   font-weight: 400;
@@ -52,11 +52,11 @@
 .spa-nav__book {
   font-family: var(--font-body);
   font-size: 0.6rem;
-  color: #FFFFFF;
+  color: #C5A059; /* Soft Gold */
   letter-spacing: 0.10em;
   text-transform: uppercase;
   padding: 0.4rem 0.6rem;
-  border: 1px solid rgba(148, 163, 184, 0.40);
+  border: 1px solid rgba(197, 160, 89, 0.40); /* Gold border */
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -76,7 +76,7 @@
   display: block;
   width: 18px;
   height: 1.5px;
-  background: #FFFFFF;
+  background: #5F6F65; /* Eucalyptus */
 }
 
 /* --- HERO --- */
@@ -104,9 +104,9 @@
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(8, 10, 12, 0.50) 0%,
-    rgba(8, 10, 12, 0.40) 40%,
-    rgba(8, 10, 12, 0.94) 100%
+    rgba(247, 245, 242, 0.40) 0%, /* Soft Alabaster tint */
+    rgba(247, 245, 242, 0.20) 40%,
+    rgba(247, 245, 242, 0.96) 100%
   );
   z-index: 1;
 }
@@ -123,7 +123,7 @@
 .spa-hero__eyebrow {
   font-family: var(--font-body);
   font-size: 0.7rem;
-  color: #94A3B8; /* Slate */
+  color: #5F6F65; /* Eucalyptus */
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -132,7 +132,7 @@
 .spa-hero__title {
   font-family: var(--font-heading);
   font-size: 5.5rem;
-  color: #FFFFFF;
+  color: #2D3436; /* Darker text for white bg */
   font-weight: 300;
   letter-spacing: 0.08em;
   line-height: 0.95;
@@ -140,7 +140,7 @@
 }
 
 .spa-hero__title em {
-  color: #FFFFFF;
+  color: #2D3436;
   font-style: normal;
   display: block;
 }
@@ -148,7 +148,7 @@
 .spa-hero__sub {
   font-family: var(--font-body);
   font-size: 0.7rem;
-  color: #94A3B8;
+  color: #5F6F65;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -157,7 +157,7 @@
 .spa-hero__divider {
   width: 40px;
   height: 1px;
-  background: #94A3B8;
+  background: #C5A059; /* Soft Gold */
   margin: 1.5rem auto;
   opacity: 0.6;
 }
@@ -166,7 +166,7 @@
   font-family: var(--font-script);
   font-style: italic;
   font-size: 1rem;
-  color: #E2E8F0; /* Frosted Silver */
+  color: #5F6F65; /* Eucalyptus */
   line-height: 1.8;
   margin-bottom: 2rem;
   opacity: 0.90;
@@ -184,9 +184,9 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  background: rgba(8, 10, 12, 0.96);
+  background: rgba(255, 255, 255, 0.96); /* Pure White */
   backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(148, 163, 184, 0.20);
+  border-top: 1px solid rgba(95, 111, 101, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,7 +203,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.6rem;
-  color: #94A3B8;
+  color: #5F6F65;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 0.25rem;
@@ -213,7 +213,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #F1F5F9;
+  color: #2D3436;
   letter-spacing: 0.10em;
   font-weight: 500;
 }
@@ -221,15 +221,15 @@
 .spa-hero__info-divider {
   width: 1px;
   height: 28px;
-  background: rgba(148, 163, 184, 0.20);
+  background: rgba(95, 111, 101, 0.15);
   flex-shrink: 0;
 }
 
 /* --- BUTTONS --- */
 .btn-spa-gold {
   display: inline-block;
-  background: #94A3B8; /* Mineral Slate */
-  color: #080A0C; /* Deep Obsidian */
+  background: #C5A059; /* Soft Gold */
+  color: #FFFFFF;
   font-family: var(--font-body);
   font-size: 0.7rem;
   font-weight: 600;
@@ -246,14 +246,14 @@
 }
 
 .btn-spa-gold:active {
-  background: #64748B;
+  background: #B48E48;
   transform: scale(0.98);
 }
 
 .btn-spa-ghost {
   display: inline-block;
   background: transparent;
-  color: #FFFFFF;
+  color: #2D3436;
   font-family: var(--font-body);
   font-size: 0.7rem;
   font-weight: 500;
@@ -262,15 +262,15 @@
   padding: 1rem 2.5rem;
   min-width: 220px;
   text-align: center;
-  border: 1px solid rgba(148, 163, 184, 0.35);
+  border: 1px solid rgba(197, 160, 89, 0.5); /* Gold border */
   transition: all 280ms ease;
   width: 100%;
   max-width: 320px;
 }
 
 .btn-spa-ghost:active {
-  border-color: #94A3B8;
-  color: #94A3B8;
+  border-color: #C5A059;
+  color: #C5A059;
 }
 
 .btn-spa-whatsapp {
@@ -293,7 +293,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.7rem;
-  color: #94A3B8;
+  color: #5F6F65;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
@@ -302,7 +302,7 @@
 .spa-divider {
   width: 40px;
   height: 1px;
-  background: #94A3B8;
+  background: #C5A059;
   margin: 1.5rem auto;
   opacity: 0.5;
 }
@@ -310,21 +310,21 @@
 .spa-section-title {
   font-family: var(--font-heading);
   font-size: 3rem;
-  color: #FFFFFF;
+  color: #2D3436;
   font-weight: 300;
   line-height: 1.1;
   margin-bottom: 0.75rem;
 }
 
 .spa-section-title em {
-  color: #94A3B8;
+  color: #C5A059; /* Gold accent */
   font-style: italic;
 }
 
 /* --- INTRO --- */
 .spa-intro {
-  background: #080A0C;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.10);
+  background: #F7F5F2; /* Alabaster Cream */
+  border-bottom: 1px solid rgba(95, 111, 101, 0.10);
   text-align: center;
   overflow: hidden;
 }
@@ -345,7 +345,7 @@
   background: linear-gradient(
     to bottom,
     transparent 0%,
-    rgba(8, 10, 12, 0.96) 100%
+    rgba(247, 245, 242, 0.96) 100%
   );
 }
 
@@ -358,30 +358,30 @@
 .spa-intro__title {
   font-family: var(--font-heading);
   font-size: 2.5rem;
-  color: #FFFFFF;
+  color: #2D3436;
   font-weight: 300;
   line-height: 1.1;
   margin-bottom: 0.75rem;
 }
 
 .spa-intro__title em {
-  color: #94A3B8;
+  color: #C5A059;
   font-style: italic;
 }
 
 .spa-intro__text {
   font-family: var(--font-body);
   font-size: 0.875rem;
-  color: #CBD5E1; /* Muted Frosted Silver */
+  color: #5F6F65; /* Eucalyptus */
   line-height: 1.9;
   opacity: 0.85;
 }
 
 /* --- SERVICES --- */
 .spa-services {
-  background: #080A0C;
+  background: #FFFFFF; /* Clean White */
   padding-bottom: 4rem;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.10);
+  border-bottom: 1px solid rgba(95, 111, 101, 0.10);
 }
 
 .spa-services__header {
@@ -401,7 +401,7 @@
   aspect-ratio: 3 / 4;
   overflow: hidden;
   display: block;
-  border: 1px solid rgba(148, 163, 184, 0.12);
+  border: 1px solid rgba(197, 160, 89, 0.15); /* Light Gold border */
   text-decoration: none;
   cursor: pointer;
 }
@@ -423,9 +423,9 @@
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(8, 10, 12, 0.98) 0%,
-    rgba(8, 10, 12, 0.35) 55%,
-    rgba(8, 10, 12, 0.10) 100%
+    rgba(247, 245, 242, 0.98) 0%, /* Alabaster overlay */
+    rgba(247, 245, 242, 0.25) 55%,
+    rgba(247, 245, 242, 0.05) 100%
   );
 }
 
@@ -442,7 +442,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #94A3B8;
+  color: #C5A059; /* Gold */
   letter-spacing: 0.25em;
   margin-bottom: 0.25rem;
 }
@@ -450,7 +450,7 @@
 .spa-service-card__title {
   font-family: var(--font-heading);
   font-size: 1rem;
-  color: #FFFFFF;
+  color: #2D3436;
   font-weight: 400;
   line-height: 1.2;
   margin-bottom: 0.25rem;
@@ -458,7 +458,7 @@
 
 .spa-service-card__desc {
   font-size: 0.65rem;
-  color: rgba(203, 213, 225, 0.70);
+  color: #5F6F65; /* Eucalyptus */
   line-height: 1.5;
   margin-bottom: 0.5rem;
 }
@@ -466,7 +466,7 @@
 .spa-service-card__price {
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #94A3B8;
+  color: #C5A059;
   letter-spacing: 0.15em;
   font-weight: 600;
 }
@@ -477,14 +477,14 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.10);
+  border-bottom: 1px solid rgba(95, 111, 101, 0.10);
 }
 
 .spa-features::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(8, 10, 12, 0.96);
+  background: rgba(247, 245, 242, 0.96); /* Alabaster Overlay */
 }
 
 .spa-features__inner {
@@ -508,7 +508,7 @@
   gap: 1.25rem;
   align-items: flex-start;
   padding: 1.5rem 0;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.10);
+  border-bottom: 1px solid rgba(95, 111, 101, 0.15);
   text-align: left;
 }
 
@@ -518,7 +518,7 @@
 
 .spa-feature__icon {
   font-size: 1.25rem;
-  color: #94A3B8;
+  color: #C5A059; /* Gold Icon */
   flex-shrink: 0;
   margin-top: 0.25rem;
 }
@@ -526,7 +526,7 @@
 .spa-feature__title {
   font-family: var(--font-heading);
   font-size: 1.375rem;
-  color: #FFFFFF;
+  color: #2D3436;
   font-weight: 400;
   margin-bottom: 0.5rem;
 }
@@ -534,16 +534,16 @@
 .spa-feature__desc {
   font-family: var(--font-body);
   font-size: 0.875rem;
-  color: #CBD5E1;
+  color: #5F6F65; /* Eucalyptus */
   line-height: 1.8;
-  opacity: 0.80;
+  opacity: 0.90;
 }
 
 /* --- STATISTICS --- */
 .spa-stats {
-  background: #0F172A; /* Slight blue tint for stats */
+  background: #FFFFFF;
   padding: 3rem 1.5rem;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.10);
+  border-bottom: 1px solid rgba(95, 111, 101, 0.10);
 }
 
 .spa-stats__inner {
@@ -564,7 +564,7 @@
   display: block;
   font-family: var(--font-heading);
   font-size: 3rem;
-  color: #94A3B8;
+  color: #C5A059; /* Gold numbers */
   line-height: 1;
   margin-bottom: 0.5rem;
 }
@@ -573,7 +573,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.6rem;
-  color: #F1F5F9;
+  color: #5F6F65;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   opacity: 0.75;
@@ -582,16 +582,16 @@
 .spa-stats__line {
   width: 1px;
   height: 50px;
-  background: rgba(148, 163, 184, 0.20);
+  background: rgba(95, 111, 101, 0.15);
   flex-shrink: 0;
 }
 
 /* --- BOOKING --- */
 .spa-booking {
-  background: #080A0C;
+  background: #F7F5F2; /* Alabaster */
   padding: 4rem 1.5rem;
   text-align: center;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.10);
+  border-bottom: 1px solid rgba(95, 111, 101, 0.10);
 }
 
 .spa-booking__inner {
@@ -602,7 +602,7 @@
 .spa-booking__sub {
   font-family: var(--font-body);
   font-size: 0.875rem;
-  color: #CBD5E1;
+  color: #5F6F65;
   line-height: 1.8;
   margin-bottom: 2rem;
   opacity: 0.85;
@@ -617,34 +617,34 @@
 
 .spa-input {
   width: 100%;
-  background: #0F172A;
-  border: 1px solid rgba(148, 163, 184, 0.15);
+  background: #FFFFFF; /* Pure White input */
+  border: 1px solid rgba(95, 111, 101, 0.2);
   padding: 1rem 1.25rem;
   font-family: var(--font-body);
   font-size: 0.875rem;
-  color: #FFFFFF;
+  color: #2D3436;
   letter-spacing: 0.05em;
   outline: none;
   transition: border-color 280ms ease;
 }
 
 .spa-input::placeholder {
-  color: rgba(255,255,255,0.30);
+  color: rgba(95, 111, 101, 0.5);
   font-style: italic;
 }
 
 .spa-input:focus {
-  border-color: #94A3B8;
+  border-color: #C5A059;
 }
 
 .spa-select {
   width: 100%;
-  background: #0F172A;
-  border: 1px solid rgba(148, 163, 184, 0.15);
+  background: #FFFFFF;
+  border: 1px solid rgba(95, 111, 101, 0.2);
   padding: 1rem 1.25rem;
   font-family: var(--font-body);
   font-size: 0.875rem;
-  color: rgba(255,255,255,0.60);
+  color: #2D3436;
   outline: none;
   appearance: none;
   -webkit-appearance: none;
@@ -657,8 +657,8 @@
 
 /* --- FOOTER --- */
 .spa-footer {
-  background: #080A0C;
-  border-top: 1px solid rgba(148, 163, 184, 0.15);
+  background: #F7F5F2;
+  border-top: 1px solid rgba(95, 111, 101, 0.15);
   padding: 2rem 1.25rem;
   text-align: center;
 }
@@ -671,7 +671,7 @@
 .spa-footer__back {
   font-family: var(--font-body);
   font-size: 0.7rem;
-  color: #94A3B8;
+  color: #5F6F65; /* Eucalyptus */
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
@@ -679,7 +679,7 @@
 .spa-footer__divider {
   width: 40px;
   height: 1px;
-  background: #94A3B8;
+  background: #C5A059;
   margin: 1rem auto;
   opacity: 0.25;
 }
@@ -687,6 +687,6 @@
 .spa-footer__copy {
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: rgba(255,255,255,0.20);
+  color: rgba(45, 52, 54, 0.4); /* Muted gray */
   letter-spacing: 0.10em;
 }
