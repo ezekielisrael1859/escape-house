@@ -9,8 +9,8 @@
   --bg-section:   #141210;
   --text-primary: #F5F0E8;
   --text-muted:   #A89880;
-  --accent-gold:  #F2F5F7;
-  --accent-light: #F2F5F7;
+  --accent-gold:  #6E8EA6;
+  --accent-light: #6E8EA6;
   --border:       rgba(242, 245, 247, 0.15);
   --obsidian:     #0A0A0A;
 }
@@ -42,7 +42,7 @@
 .stay-nav__back {
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #F2F5F7;
+  color: #6E8EA6;
   letter-spacing: 0.10em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -457,7 +457,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #F2F5F7;
+  color: #6E8EA6;
   letter-spacing: 0.25em;
   margin-bottom: 0.25rem;
 }
@@ -481,7 +481,7 @@
 .stay-room-card__price {
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #F2F5F7;
+  color: #6E8EA6;
   letter-spacing: 0.15em;
   font-weight: 600;
 }
