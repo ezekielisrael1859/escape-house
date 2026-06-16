@@ -279,8 +279,8 @@
 
 .btn-dining-whatsapp {
   display: inline-block;
-  background: #24362B; /* Calm Desaturated Green */
-  color: #E0D6D6;
+  background: #25D366; /* Updated to Bright WhatsApp Green */
+  color: #FFFFFF; /* Updated to Pure White for contrast */
   font-family: var(--font-body);
   font-size: 0.7rem;
   font-weight: 600;
