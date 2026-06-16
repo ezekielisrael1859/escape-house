@@ -1,18 +1,18 @@
 /* ============================================
    ESCAPE HOUSE HOTEL APARTMENTS — BRANCH CSS
-   Palette: Dark Warm Luxury — Charcoal & Gold
+   Palette: Midnight Smoke & Antique Gold
    ============================================ */
 
 :root {
-  --bg-dark:      #0E0E0E;
-  --bg-card:      #1C1612;
-  --bg-section:   #141210;
-  --text-primary: #F5F0E8;
-  --text-muted:   #A89880;
-  --accent-gold:  #6E8EA6;
-  --accent-light: #6E8EA6;
-  --border:       rgba(242, 245, 247, 0.15);
-  --obsidian:     #0A0A0A;
+  --bg-dark:      #1A1C1E;
+  --bg-card:      #24272B;
+  --bg-section:   #1E2022;
+  --text-primary: #F4F4F2;
+  --text-muted:   #8E9194;
+  --accent-gold:  #B4A078;
+  --accent-light: #C5B48F;
+  --border:       rgba(180, 160, 120, 0.2);
+  --obsidian:     #0D0E0F;
 }
 
 /* --- NAVIGATION --- */
@@ -23,7 +23,7 @@
   right: 0;
   z-index: 100;
   padding: 1rem 1.25rem;
-  background: rgba(14, 14, 14, 0.96);
+  background: rgba(26, 28, 30, 0.96);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
@@ -42,7 +42,7 @@
 .stay-nav__back {
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #6E8EA6;
+  color: var(--accent-gold);
   letter-spacing: 0.10em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -67,7 +67,7 @@
   letter-spacing: 0.10em;
   text-transform: uppercase;
   padding: 0.4rem 0.6rem;
-  border: 1px solid rgba(168, 180, 212, 0.50);
+  border: 1px solid rgba(180, 160, 120, 0.4);
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -115,9 +115,9 @@
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(14, 14, 14, 0.55) 0%,
-    rgba(14, 14, 14, 0.40) 40%,
-    rgba(14, 14, 14, 0.92) 100%
+    rgba(26, 28, 30, 0.55) 0%,
+    rgba(26, 28, 30, 0.40) 40%,
+    rgba(26, 28, 30, 0.92) 100%
   );
   z-index: 1;
 }
@@ -151,7 +151,7 @@
 }
 
 .stay-hero__title em {
-  color: var(--accent-light);
+  color: var(--accent-gold);
   font-style: italic;
   display: block;
 }
@@ -195,7 +195,7 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  background: rgba(14, 14, 14, 0.88);
+  background: rgba(26, 28, 30, 0.88);
   backdrop-filter: blur(10px);
   border-top: 1px solid var(--border);
   display: flex;
@@ -278,7 +278,7 @@
   padding: 1rem 2.5rem;
   min-width: 220px;
   text-align: center;
-  border: 1px solid rgba(245, 240, 232, 0.35);
+  border: 1px solid rgba(244, 244, 242, 0.35);
   transition: all 280ms ease;
   width: 100%;
   max-width: 320px;
@@ -361,7 +361,7 @@
   background: linear-gradient(
     to bottom,
     transparent 0%,
-    rgba(14, 14, 14, 0.92) 100%
+    rgba(26, 28, 30, 0.92) 100%
   );
 }
 
@@ -416,7 +416,7 @@
   aspect-ratio: 3 / 4;
   overflow: hidden;
   display: block;
-  border: 1px solid rgba(168, 180, 212, 0.15);
+  border: 1px solid var(--border);
   text-decoration: none;
   cursor: pointer;
 }
@@ -438,9 +438,9 @@
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(5, 8, 18, 0.97) 0%,
-    rgba(5, 8, 18, 0.35) 55%,
-    rgba(5, 8, 18, 0.10) 100%
+    rgba(10, 11, 12, 0.97) 0%,
+    rgba(10, 11, 12, 0.35) 55%,
+    rgba(10, 11, 12, 0.10) 100%
   );
 }
 
@@ -457,7 +457,7 @@
   display: block;
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #6E8EA6;
+  color: var(--accent-gold);
   letter-spacing: 0.25em;
   margin-bottom: 0.25rem;
 }
@@ -473,7 +473,7 @@
 
 .stay-room-card__desc {
   font-size: 0.65rem;
-  color: rgba(255,255,255,0.70);
+  color: rgba(244, 244, 242, 0.70);
   line-height: 1.5;
   margin-bottom: 0.5rem;
 }
@@ -481,7 +481,7 @@
 .stay-room-card__price {
   font-family: var(--font-body);
   font-size: 0.65rem;
-  color: #6E8EA6;
+  color: var(--accent-gold);
   letter-spacing: 0.15em;
   font-weight: 600;
 }
@@ -499,7 +499,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(14, 14, 14, 0.92);
+  background: rgba(26, 28, 30, 0.92);
 }
 
 .stay-features__inner {
