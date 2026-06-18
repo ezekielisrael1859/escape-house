@@ -4,7 +4,7 @@
    ============================================ */
 
 const SUPABASE_URL = 'https://hpbtlrkjmyejzqyntstn.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_C6V9Gl83td-T64sBQGb1og_Vi9ZyoLh';
+const SUPABASE_KEY = 'sb_publishable_lP3Tzy64JvDXosu7bRaYQg_AuKYn0rv';
 
 async function submitBooking(formData) {
   try {
