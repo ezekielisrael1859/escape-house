@@ -841,3 +841,89 @@
   opacity: 1;
   pointer-events: all;
 }
+/* ============================================
+   DESKTOP MEDIA QUERIES — 1024px+
+   ============================================ */
+
+@media (min-width: 1024px) {
+
+  .nav__inner {
+    max-width: 1200px;
+  }
+
+  .hero__content {
+    max-width: 800px;
+  }
+
+  .hero__title {
+    font-size: 8rem;
+  }
+
+  .hero__infobar {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1.5rem 3rem;
+  }
+
+  .hero__info {
+    flex: none;
+  }
+
+  .strip__grid {
+    max-width: 1200px;
+    gap: 2rem;
+  }
+
+  .experiences__header {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .experiences__title {
+    font-size: 5rem;
+  }
+
+  .exp-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .story__content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+  }
+
+  .story__title {
+    font-size: 4rem;
+  }
+
+  .stats__inner {
+    max-width: 1200px;
+    gap: 4rem;
+  }
+
+  .stat__num {
+    font-size: 6rem;
+  }
+
+  .coded__content {
+    max-width: 800px;
+  }
+
+  .coded__title {
+    font-size: 7rem;
+  }
+
+  .footer__inner {
+    max-width: 1200px;
+  }
+
+  .footer__nav {
+    gap: 3rem;
+  }
+
+}
