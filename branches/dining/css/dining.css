@@ -717,3 +717,98 @@
   color: rgba(224, 214, 214, 0.20);
   letter-spacing: 0.10em;
 }
+/* ============================================
+   DESKTOP MEDIA QUERIES — 1024px+
+   ============================================ */
+
+@media (min-width: 1024px) {
+
+  .dining-nav__inner {
+    max-width: 1200px;
+  }
+
+  .dining-nav__menu {
+    display: none;
+  }
+
+  .dining-hero__content {
+    max-width: 900px;
+  }
+
+  .dining-hero__title {
+    font-size: 8rem;
+  }
+
+  .dining-hero__infobar {
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5rem 3rem;
+    gap: 0;
+  }
+
+  .dining-hero__info {
+    flex: 1;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .dining-hero__info-divider {
+    display: block;
+    width: 1px;
+    height: 40px;
+    background: rgba(199, 123, 92, 0.25);
+  }
+
+  .dining-intro__inner {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .dining-intro__img {
+    aspect-ratio: 21 / 9;
+  }
+
+  .dining-menu__header {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .dining-section-title {
+    font-size: 5rem;
+  }
+
+  .dining-menu__grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .dining-features__inner {
+    max-width: 900px;
+  }
+
+  .dining-features__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .dining-stats__inner {
+    max-width: 1200px;
+    gap: 6rem;
+  }
+
+  .dining-stat__num {
+    font-size: 5rem;
+  }
+
+  .dining-booking__inner {
+    max-width: 600px;
+  }
+
+  .dining-footer__inner {
+    max-width: 1200px;
+  }
+
+}

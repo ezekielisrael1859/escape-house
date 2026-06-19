@@ -709,3 +709,98 @@
   color: rgba(255,255,255,0.20);
   letter-spacing: 0.10em;
 }
+/* ============================================
+   DESKTOP MEDIA QUERIES — 1024px+
+   ============================================ */
+
+@media (min-width: 1024px) {
+
+  .salon-nav__inner {
+    max-width: 1200px;
+  }
+
+  .salon-nav__menu {
+    display: none;
+  }
+
+  .salon-hero__content {
+    max-width: 900px;
+  }
+
+  .salon-hero__title {
+    font-size: 8rem;
+  }
+
+  .salon-hero__infobar {
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5rem 3rem;
+    gap: 0;
+  }
+
+  .salon-hero__info {
+    flex: 1;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .salon-hero__info-divider {
+    display: block;
+    width: 1px;
+    height: 40px;
+    background: rgba(196, 144, 144, 0.25);
+  }
+
+  .salon-intro__inner {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .salon-intro__img {
+    aspect-ratio: 21 / 9;
+  }
+
+  .salon-services__header {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .salon-section-title {
+    font-size: 5rem;
+  }
+
+  .salon-services__grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .salon-features__inner {
+    max-width: 900px;
+  }
+
+  .salon-features__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .salon-stats__inner {
+    max-width: 1200px;
+    gap: 6rem;
+  }
+
+  .salon-stat__num {
+    font-size: 5rem;
+  }
+
+  .salon-booking__inner {
+    max-width: 600px;
+  }
+
+  .salon-footer__inner {
+    max-width: 1200px;
+  }
+
+}
