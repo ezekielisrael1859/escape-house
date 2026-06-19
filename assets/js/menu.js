@@ -29,9 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // --- FAQ TOGGLE ---
 document.querySelectorAll('.spa-faq__question, .stay-faq__question, .dining-faq__question, .salon-faq__question, .coded-faq__question').forEach(btn => {
   btn.addEventListener('click', function() {
-    const item = this.closest('[class$="__item"]');
-    const isOpen = item.classList.contains('is-open');
-    document.querySelectorAll('[class$="__item"]').forEach(i => i.classList.remove('is-open'));
-    if (!isOpen) item.classList.add('is-open');
+    const item = this.closest('.spa-faq__item, .stay-faq__item, .dining-faq__item, .salon-faq__item, .coded-faq__item');
+    item.classList.toggle('is-open');
   });
 });
