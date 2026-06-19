@@ -732,6 +732,44 @@
 .room-card--penthouse { background-image: url('../../../assets/images/stay/penthouse.jpg'); }
 .room-card--family    { background-image: url('../../../assets/images/stay/family.jpg'); }
 .room-card--couples   { background-image: url('../../../assets/images/stay/couples.jpg'); }
+<!-- TESTIMONIALS -->
+<section class="stay-testimonials">
+  <div class="stay-testimonials__inner">
+    <span class="stay-label">What Our Guests Say</span>
+    <h2 class="stay-section-title">Guest<br><em>Reviews</em></h2>
+    <div class="stay-divider"></div>
+    <div class="stay-testimonials__grid">
+
+      <div class="stay-testimonial">
+        <div class="stay-testimonial__stars">★★★★★</div>
+        <p class="stay-testimonial__text">"The Executive Suite was absolutely stunning. Every detail was perfect — from the premium bedding to the in-room amenities. The concierge service was exceptional throughout our stay."</p>
+        <div class="stay-testimonial__author">
+          <span class="stay-testimonial__name">Emeka N.</span>
+          <span class="stay-testimonial__role">Verified Guest</span>
+        </div>
+      </div>
+
+      <div class="stay-testimonial">
+        <div class="stay-testimonial__stars">★★★★★</div>
+        <p class="stay-testimonial__text">"We stayed in the Couples Retreat for our anniversary and it exceeded every expectation. The atmosphere was romantic, the service was impeccable and the location in Maitama is perfect."</p>
+        <div class="stay-testimonial__author">
+          <span class="stay-testimonial__name">Ngozi & Chidi B.</span>
+          <span class="stay-testimonial__role">Verified Guests</span>
+        </div>
+      </div>
+
+      <div class="stay-testimonial">
+        <div class="stay-testimonial__stars">★★★★★</div>
+        <p class="stay-testimonial__text">"As a frequent business traveller in Abuja, Escape House Hotel is now my first choice. The Penthouse Suite is world class and having the spa and restaurant on site is incredibly convenient."</p>
+        <div class="stay-testimonial__author">
+          <span class="stay-testimonial__name">Abubakar M.</span>
+          <span class="stay-testimonial__role">Verified Guest</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 /* --- FAQ --- */
 .stay-faq {
   background: #090D1E;

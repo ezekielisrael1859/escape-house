@@ -690,6 +690,88 @@
   color: rgba(255,255,255,0.20);
   letter-spacing: 0.10em;
 }
+/* --- TESTIMONIALS --- */
+.spa-testimonials {
+  background: #050C0E;
+  padding: 4rem 1.5rem;
+  border-top: 1px solid rgba(212, 165, 144, 0.12);
+}
+
+.spa-testimonials__inner {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.spa-testimonials__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.spa-testimonial {
+  background: #091215;
+  border: 1px solid rgba(212, 165, 144, 0.12);
+  border-left: 3px solid #D4A590;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.spa-testimonial__stars {
+  color: #D4A590;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.spa-testimonial__text {
+  font-family: var(--font-script);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #E8E4DC;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  opacity: 0.90;
+}
+
+.spa-testimonial__author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.spa-testimonial__name {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: #D4A590;
+  font-weight: 600;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+}
+
+.spa-testimonial__role {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.40);
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .spa-testimonials__inner {
+    max-width: 1200px;
+  }
+
+  .spa-testimonials__grid {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .spa-testimonial {
+    flex: 1;
+  }
+}
 /* --- FAQ --- */
 .spa-faq {
   background: #091215;

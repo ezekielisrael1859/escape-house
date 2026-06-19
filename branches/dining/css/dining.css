@@ -717,6 +717,88 @@
   color: rgba(224, 214, 214, 0.20);
   letter-spacing: 0.10em;
 }
+/* --- TESTIMONIALS --- */
+.dining-testimonials {
+  background: #0E0508;
+  padding: 4rem 1.5rem;
+  border-top: 1px solid rgba(199, 123, 92, 0.12);
+}
+
+.dining-testimonials__inner {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dining-testimonials__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.dining-testimonial {
+  background: #1A080C;
+  border: 1px solid rgba(199, 123, 92, 0.12);
+  border-left: 3px solid #C77B5C;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.dining-testimonial__stars {
+  color: #C77B5C;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.dining-testimonial__text {
+  font-family: var(--font-script);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #F0E8E0;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  opacity: 0.90;
+}
+
+.dining-testimonial__author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.dining-testimonial__name {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: #C77B5C;
+  font-weight: 600;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+}
+
+.dining-testimonial__role {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.40);
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .dining-testimonials__inner {
+    max-width: 1200px;
+  }
+
+  .dining-testimonials__grid {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .dining-testimonial {
+    flex: 1;
+  }
+}
 /* --- FAQ --- */
 .dining-faq {
   background: #1A080C;

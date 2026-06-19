@@ -709,6 +709,88 @@
   color: rgba(255,255,255,0.20);
   letter-spacing: 0.10em;
 }
+/* --- TESTIMONIALS --- */
+.salon-testimonials {
+  background: #0C0A0A;
+  padding: 4rem 1.5rem;
+  border-top: 1px solid rgba(196, 144, 144, 0.12);
+}
+
+.salon-testimonials__inner {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.salon-testimonials__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.salon-testimonial {
+  background: #181414;
+  border: 1px solid rgba(196, 144, 144, 0.12);
+  border-left: 3px solid #C49090;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.salon-testimonial__stars {
+  color: #C49090;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.salon-testimonial__text {
+  font-family: var(--font-script);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #F0E8E8;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  opacity: 0.90;
+}
+
+.salon-testimonial__author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.salon-testimonial__name {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: #C49090;
+  font-weight: 600;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+}
+
+.salon-testimonial__role {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.40);
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .salon-testimonials__inner {
+    max-width: 1200px;
+  }
+
+  .salon-testimonials__grid {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .salon-testimonial {
+    flex: 1;
+  }
+}
 /* --- FAQ --- */
 .salon-faq {
   background: #181414;
