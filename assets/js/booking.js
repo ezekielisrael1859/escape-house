@@ -1,12 +1,12 @@
 /* ============================================
    ESCAPE HOUSE — BOOKING SYSTEM
-   Supabase Integration
+   Supabase + WhatsApp
    ============================================ */
 
 const SUPABASE_URL = 'https://hpbtlrkjmyejzqyntstn.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_lP3Tzy64JvDXosu7bRaYQg_AuKYn0rv';
 
-async function submitBooking(formData) {
+async function saveToSupabase(data) {
   try {
     const response = await fetch(`${SUPABASE_URL}/rest/v1/bookings`, {
       method: 'POST',
@@ -16,165 +16,106 @@ async function submitBooking(formData) {
         'Authorization': `Bearer ${SUPABASE_KEY}`,
         'Prefer': 'return=minimal'
       },
-      body: JSON.stringify(formData)
+      body: JSON.stringify(data)
     });
-
-    if (response.ok) {
-      return { success: true };
-    } else {
-      return { success: false };
-    }
+    return response.ok;
   } catch (error) {
-    return { success: false };
+    return false;
   }
 }
 
-// --- SPA BOOKING ---
+function sendToWhatsApp(phone, data) {
+  const message =
+`🏨 *NEW BOOKING — Escape House ${data.branch.toUpperCase()}*
+
+*Name:* ${data.name}
+*Phone:* ${data.phone}
+*Email:* ${data.email}
+*Service:* ${data.service}
+*Date:* ${data.date}
+*Message:* ${data.message || 'None'}
+
+_Sent from Escape House Website_`;
+
+  const encoded = encodeURIComponent(message);
+  window.open(`https://wa.me/${phone}?text=${encoded}`, '_blank');
+}
+
+async function handleBooking(formEl, phone, branch) {
+  const data = {
+    name: formEl.querySelector('[name="name"]').value,
+    phone: formEl.querySelector('[name="phone"]').value,
+    email: formEl.querySelector('[name="email"]').value,
+    service: formEl.querySelector('[name="service"]').value,
+    date: formEl.querySelector('[name="date"]').value,
+    message: formEl.querySelector('[name="message"]').value,
+    branch: branch
+  };
+
+  const btn = formEl.querySelector('button[type="submit"]');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  await saveToSupabase(data);
+  sendToWhatsApp(phone, data);
+
+  btn.textContent = 'Booking Sent!';
+  btn.style.background = '#25D366';
+  formEl.reset();
+
+  setTimeout(() => {
+    btn.textContent = btn.getAttribute('data-original');
+    btn.style.background = '';
+    btn.disabled = false;
+  }, 4000);
+}
+
+/* --- SPA --- */
 const spaForm = document.getElementById('spaBookingForm');
 if (spaForm) {
-  spaForm.addEventListener('submit', async function(e) {
+  spaForm.querySelector('button[type="submit"]').setAttribute('data-original', 'Request Booking');
+  spaForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    const btn = this.querySelector('button[type="submit"]');
-    btn.textContent = 'Sending...';
-    btn.disabled = true;
-
-    const result = await submitBooking({
-      name: this.querySelector('[name="name"]').value,
-      phone: this.querySelector('[name="phone"]').value,
-      email: this.querySelector('[name="email"]').value,
-      service: this.querySelector('[name="service"]').value,
-      date: this.querySelector('[name="date"]').value,
-      message: this.querySelector('[name="message"]').value,
-      branch: 'spa'
-    });
-
-    if (result.success) {
-      btn.textContent = 'Booking Sent!';
-      btn.style.background = '#25D366';
-      spaForm.reset();
-    } else {
-      btn.textContent = 'Try Again';
-      btn.disabled = false;
-    }
+    handleBooking(this, '2348099224450', 'Spa');
   });
 }
 
-// --- HOTEL BOOKING ---
+/* --- HOTEL --- */
 const stayForm = document.getElementById('stayBookingForm');
 if (stayForm) {
-  stayForm.addEventListener('submit', async function(e) {
+  stayForm.querySelector('button[type="submit"]').setAttribute('data-original', 'Request Reservation');
+  stayForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    const btn = this.querySelector('button[type="submit"]');
-    btn.textContent = 'Sending...';
-    btn.disabled = true;
-
-    const result = await submitBooking({
-      name: this.querySelector('[name="name"]').value,
-      phone: this.querySelector('[name="phone"]').value,
-      email: this.querySelector('[name="email"]').value,
-      service: this.querySelector('[name="service"]').value,
-      date: this.querySelector('[name="date"]').value,
-      message: this.querySelector('[name="message"]').value,
-      branch: 'hotel'
-    });
-
-    if (result.success) {
-      btn.textContent = 'Booking Sent!';
-      btn.style.background = '#25D366';
-      stayForm.reset();
-    } else {
-      btn.textContent = 'Try Again';
-      btn.disabled = false;
-    }
+    handleBooking(this, '2348099224450', 'Hotel');
   });
 }
 
-// --- RESTAURANT BOOKING ---
+/* --- RESTAURANT --- */
 const diningForm = document.getElementById('diningBookingForm');
 if (diningForm) {
-  diningForm.addEventListener('submit', async function(e) {
+  diningForm.querySelector('button[type="submit"]').setAttribute('data-original', 'Request Reservation');
+  diningForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    const btn = this.querySelector('button[type="submit"]');
-    btn.textContent = 'Sending...';
-    btn.disabled = true;
-
-    const result = await submitBooking({
-      name: this.querySelector('[name="name"]').value,
-      phone: this.querySelector('[name="phone"]').value,
-      email: this.querySelector('[name="email"]').value,
-      service: this.querySelector('[name="service"]').value,
-      date: this.querySelector('[name="date"]').value,
-      message: this.querySelector('[name="message"]').value,
-      branch: 'restaurant'
-    });
-
-    if (result.success) {
-      btn.textContent = 'Reservation Sent!';
-      btn.style.background = '#25D366';
-      diningForm.reset();
-    } else {
-      btn.textContent = 'Try Again';
-      btn.disabled = false;
-    }
+    handleBooking(this, '2348099224466', 'Restaurant');
   });
 }
 
-// --- SALON BOOKING ---
+/* --- SALON --- */
 const salonForm = document.getElementById('salonBookingForm');
 if (salonForm) {
-  salonForm.addEventListener('submit', async function(e) {
+  salonForm.querySelector('button[type="submit"]').setAttribute('data-original', 'Request Booking');
+  salonForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    const btn = this.querySelector('button[type="submit"]');
-    btn.textContent = 'Sending...';
-    btn.disabled = true;
-
-    const result = await submitBooking({
-      name: this.querySelector('[name="name"]').value,
-      phone: this.querySelector('[name="phone"]').value,
-      email: this.querySelector('[name="email"]').value,
-      service: this.querySelector('[name="service"]').value,
-      date: this.querySelector('[name="date"]').value,
-      message: this.querySelector('[name="message"]').value,
-      branch: 'salon'
-    });
-
-    if (result.success) {
-      btn.textContent = 'Booking Sent!';
-      btn.style.background = '#25D366';
-      salonForm.reset();
-    } else {
-      btn.textContent = 'Try Again';
-      btn.disabled = false;
-    }
+    handleBooking(this, '2348099224450', 'Salon');
   });
 }
 
-// --- CODED BOOKING ---
+/* --- CODED --- */
 const codedForm = document.getElementById('codedBookingForm');
 if (codedForm) {
-  codedForm.addEventListener('submit', async function(e) {
+  codedForm.querySelector('button[type="submit"]').setAttribute('data-original', 'Submit Request');
+  codedForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    const btn = this.querySelector('button[type="submit"]');
-    btn.textContent = 'Sending...';
-    btn.disabled = true;
-
-    const result = await submitBooking({
-      name: this.querySelector('[name="name"]').value,
-      phone: this.querySelector('[name="phone"]').value,
-      email: this.querySelector('[name="email"]').value,
-      service: this.querySelector('[name="service"]').value,
-      date: this.querySelector('[name="date"]').value,
-      message: this.querySelector('[name="message"]').value,
-      branch: 'coded'
-    });
-
-    if (result.success) {
-      btn.textContent = 'Request Sent!';
-      btn.style.background = '#25D366';
-      codedForm.reset();
-    } else {
-      btn.textContent = 'Try Again';
-      btn.disabled = false;
-    }
+    handleBooking(this, '2349033333733', 'Coded Escape House');
   });
 }
