@@ -26,3 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
   if (navBackdrop) navBackdrop.addEventListener('click', closeMenu);
 
 });
+// --- FAQ TOGGLE ---
+document.querySelectorAll('.spa-faq__question, .stay-faq__question, .dining-faq__question, .salon-faq__question, .coded-faq__question').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const item = this.closest('[class$="__item"]');
+    const isOpen = item.classList.contains('is-open');
+    document.querySelectorAll('[class$="__item"]').forEach(i => i.classList.remove('is-open'));
+    if (!isOpen) item.classList.add('is-open');
+  });
+});
