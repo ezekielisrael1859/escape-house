@@ -732,6 +732,81 @@
 .room-card--penthouse { background-image: url('../../../assets/images/stay/penthouse.jpg'); }
 .room-card--family    { background-image: url('../../../assets/images/stay/family.jpg'); }
 .room-card--couples   { background-image: url('../../../assets/images/stay/couples.jpg'); }
+/* --- FAQ --- */
+.stay-faq {
+  background: #090D1E;
+  padding: 4rem 1.5rem;
+  border-top: 1px solid rgba(184, 149, 106, 0.12);
+  border-bottom: 1px solid rgba(184, 149, 106, 0.12);
+}
+
+.stay-faq__inner {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stay-faq__list {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.stay-faq__item {
+  border-bottom: 1px solid rgba(184, 149, 106, 0.12);
+}
+
+.stay-faq__question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1.25rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  font-weight: 400;
+  cursor: pointer;
+  text-align: left;
+  gap: 1rem;
+}
+
+.stay-faq__icon {
+  color: #B8956A;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  transition: transform 280ms ease;
+}
+
+.stay-faq__item.is-open .stay-faq__icon {
+  transform: rotate(45deg);
+}
+
+.stay-faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 400ms ease;
+}
+
+.stay-faq__item.is-open .stay-faq__answer {
+  max-height: 200px;
+}
+
+.stay-faq__answer p {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: #E8EAF0;
+  line-height: 1.8;
+  opacity: 0.85;
+  padding-bottom: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .stay-faq__inner {
+    max-width: 800px;
+  }
+}
 /* ============================================
    DESKTOP MEDIA QUERIES — 1024px+
    ============================================ */
