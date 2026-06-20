@@ -332,3 +332,39 @@ p {
   height: 1.5px;
   background: #FFFFFF;
 }
+/* --- BRANCH PAGE ANIMATIONS --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* --- CARD HOVER DESKTOP --- */
+@media (min-width: 1024px) {
+  .spa-service-card,
+  .stay-room-card,
+  .dining-menu-card,
+  .salon-service-card,
+  .coded-exp-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .spa-service-card:hover,
+  .stay-room-card:hover,
+  .dining-menu-card:hover,
+  .salon-service-card:hover,
+  .coded-exp-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  }
+}
