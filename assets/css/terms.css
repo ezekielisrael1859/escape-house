@@ -1,0 +1,233 @@
+/* ============================================
+   ESCAPE HOUSE — TERMS & POLICIES CSS
+   ============================================ */
+
+/* --- NAVIGATION --- */
+.terms-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1rem 1.25rem;
+  background: rgba(13, 15, 11, 0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(196, 154, 60, 0.20);
+}
+
+.terms-nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 480px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.terms-nav__back {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  color: var(--color-gold);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.terms-nav__title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: #FFFFFF;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* --- HERO --- */
+.terms-hero {
+  background: var(--color-page);
+  padding: 8rem 1.5rem 4rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(196, 154, 60, 0.15);
+}
+
+.terms-hero__content {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.terms-label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  color: var(--color-gold);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.terms-hero__title {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  color: #FFFFFF;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.terms-hero__title em {
+  color: var(--color-gold);
+  font-style: italic;
+}
+
+.terms-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--color-gold);
+  margin: 1.5rem auto;
+  opacity: 0.5;
+}
+
+.terms-hero__sub {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--color-cream);
+  line-height: 1.8;
+  opacity: 0.85;
+}
+
+/* --- MAIN CONTENT --- */
+.terms-main {
+  background: var(--color-page);
+  padding: 3rem 0;
+}
+
+.terms-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* --- SECTIONS --- */
+.terms-section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid rgba(196, 154, 60, 0.10);
+}
+
+.terms-section:last-child {
+  border-bottom: none;
+}
+
+.terms-section__title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-gold);
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
+}
+
+.terms-section__content p {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--color-cream);
+  line-height: 1.9;
+  opacity: 0.85;
+  margin-bottom: 1rem;
+}
+
+.terms-section__content p:last-child {
+  margin-bottom: 0;
+}
+
+.terms-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.terms-list li {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--color-cream);
+  line-height: 1.8;
+  opacity: 0.85;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.terms-list li::before {
+  content: '◇';
+  position: absolute;
+  left: 0;
+  color: var(--color-gold);
+  font-size: 0.6rem;
+  top: 0.35rem;
+}
+
+.terms-list li strong {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/* --- FOOTER --- */
+.terms-footer {
+  background: var(--color-page);
+  border-top: 1px solid rgba(196, 154, 60, 0.15);
+  padding: 2rem 1.25rem;
+  text-align: center;
+}
+
+.terms-footer__inner {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.terms-footer__back {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  color: var(--color-gold);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.terms-footer__divider {
+  width: 40px;
+  height: 1px;
+  background: var(--color-gold);
+  margin: 1rem auto;
+  opacity: 0.25;
+}
+
+.terms-footer__copy {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.20);
+  letter-spacing: 0.10em;
+}
+
+/* --- DESKTOP --- */
+@media (min-width: 1024px) {
+  .terms-nav__inner {
+    max-width: 1200px;
+  }
+
+  .terms-hero__content {
+    max-width: 800px;
+  }
+
+  .terms-hero__title {
+    font-size: 5rem;
+  }
+
+  .terms-container {
+    max-width: 800px;
+  }
+
+  .terms-footer__inner {
+    max-width: 1200px;
+  }
+}
