@@ -732,50 +732,81 @@
 .room-card--penthouse { background-image: url('../../../assets/images/stay/penthouse.jpg'); }
 .room-card--family    { background-image: url('../../../assets/images/stay/family.jpg'); }
 .room-card--couples   { background-image: url('../../../assets/images/stay/couples.jpg'); }
-<!-- TESTIMONIALS -->
-<section class="stay-testimonials">
-  <div class="stay-testimonials__inner">
-    <span class="stay-label">What Our Guests Say</span>
-    <h2 class="stay-section-title">Guest<br><em>Reviews</em></h2>
-    <div class="stay-divider"></div>
-    <div class="stay-testimonials__grid">
 
-      <div class="stay-testimonial">
-        <div class="stay-testimonial__stars">★★★★★</div>
-        <p class="stay-testimonial__text">"The Executive Suite was absolutely stunning. Every detail was perfect — from the premium bedding to the in-room amenities. The concierge service was exceptional throughout our stay."</p>
-        <div class="stay-testimonial__author">
-          <span class="stay-testimonial__name">Emeka N.</span>
-          <span class="stay-testimonial__role">Verified Guest</span>
-        </div>
-      </div>
+/* --- TESTIMONIALS --- */
+.stay-testimonials {
+  background: #050812;
+  padding: 4rem 1.5rem;
+  border-top: 1px solid rgba(184, 149, 106, 0.25);
+  border-bottom: 1px solid rgba(184, 149, 106, 0.25);
+}
 
-      <div class="stay-testimonial">
-        <div class="stay-testimonial__stars">★★★★★</div>
-        <p class="stay-testimonial__text">"We stayed in the Couples Retreat for our anniversary and it exceeded every expectation. The atmosphere was romantic, the service was impeccable and the location in Maitama is perfect."</p>
-        <div class="stay-testimonial__author">
-          <span class="stay-testimonial__name">Ngozi & Chidi B.</span>
-          <span class="stay-testimonial__role">Verified Guests</span>
-        </div>
-      </div>
+.stay-testimonials__inner {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
 
-      <div class="stay-testimonial">
-        <div class="stay-testimonial__stars">★★★★★</div>
-        <p class="stay-testimonial__text">"As a frequent business traveller in Abuja, Escape House Hotel is now my first choice. The Penthouse Suite is world class and having the spa and restaurant on site is incredibly convenient."</p>
-        <div class="stay-testimonial__author">
-          <span class="stay-testimonial__name">Abubakar M.</span>
-          <span class="stay-testimonial__role">Verified Guest</span>
-        </div>
-      </div>
+.stay-testimonials__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
 
-    </div>
-  </div>
-</section>
+.stay-testimonial {
+  background: #0D1428;
+  border: 1px solid rgba(184, 149, 106, 0.25);
+  border-left: 3px solid #B8956A;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.stay-testimonial__stars {
+  color: #B8956A;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.stay-testimonial__text {
+  font-family: var(--font-script);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #E8EAF0;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  opacity: 1;
+}
+
+.stay-testimonial__author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.stay-testimonial__name {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: #B8956A;
+  font-weight: 600;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+}
+
+.stay-testimonial__role {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.50);
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+}
+
 /* --- FAQ --- */
 .stay-faq {
   background: #090D1E;
   padding: 4rem 1.5rem;
-  border-top: 1px solid rgba(184, 149, 106, 0.12);
-  border-bottom: 1px solid rgba(184, 149, 106, 0.12);
+  border-bottom: 1px solid rgba(184, 149, 106, 0.25);
 }
 
 .stay-faq__inner {
@@ -790,7 +821,7 @@
 }
 
 .stay-faq__item {
-  border-bottom: 1px solid rgba(184, 149, 106, 0.12);
+  border-bottom: 1px solid rgba(184, 149, 106, 0.15);
 }
 
 .stay-faq__question {
@@ -836,11 +867,24 @@
   font-size: 0.875rem;
   color: #E8EAF0;
   line-height: 1.8;
-  opacity: 0.85;
+  opacity: 1;
   padding-bottom: 1.25rem;
 }
 
 @media (min-width: 1024px) {
+  .stay-testimonials__inner {
+    max-width: 1200px;
+  }
+
+  .stay-testimonials__grid {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .stay-testimonial {
+    flex: 1;
+  }
+
   .stay-faq__inner {
     max-width: 800px;
   }
@@ -933,6 +977,23 @@
 
   .stay-booking__inner {
     max-width: 600px;
+  }
+
+  .stay-testimonials__inner {
+    max-width: 1200px;
+  }
+
+  .stay-testimonials__grid {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .stay-testimonial {
+    flex: 1;
+  }
+
+  .stay-faq__inner {
+    max-width: 800px;
   }
 
   .stay-footer__inner {
